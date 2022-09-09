@@ -1,0 +1,1 @@
+from serializers.common import ReviewSerializer

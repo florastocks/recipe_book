@@ -1,0 +1,34 @@
+[
+{
+  "model": "recipes.recipe",
+  "pk": 1,
+  "fields": {
+    "title": "yummy Spag Bol",
+    "instructions": "get your mince and cook slowly until grey etc etc"
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 2,
+  "fields": {
+    "title": "gooey Chocolate brownies",
+    "instructions": "lots of chocolate, some cake mix, some chocolate chunks"
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 3,
+  "fields": {
+    "title": "pepperoni Pizza",
+    "instructions": "pizza base, tomato sauce, slices of pepperoni"
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 4,
+  "fields": {
+    "title": "spicy curry",
+    "instructions": "add ingredients and heat up"
+  }
+}
+]
