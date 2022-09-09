@@ -20,7 +20,6 @@ class ReviewListView(APIView):
       return Response(e.__dict__ if e.__dict__ else str(e), status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 class ReviewDetailView(APIView):
-  
   def get_review(self, pk):
     try: 
       return Review.objects.get(pk=pk)

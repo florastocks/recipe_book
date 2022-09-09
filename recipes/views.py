@@ -5,14 +5,14 @@ from rest_framework.exceptions import NotFound
 
 from .models import Recipe
 from .serializers.common import RecipeSerializer
-from .serializers.populated import PopulatedRecipeSerializer
+from .serializers.populated import PopulatedRecipeSerializer, PopulatedRecipeSerializerFoodType
 
 # Create your views here.
 class RecipeListView(APIView):
   def get(self, _request):
     recipes = Recipe.objects.all()
     print("recipies -> ", recipes)
-    serialized_recipes = RecipeSerializer(recipes, many=True)
+    serialized_recipes = PopulatedRecipeSerializerFoodType(recipes, many=True)
     print(serialized_recipes)
     return Response(serialized_recipes.data, status=status.HTTP_200_OK)
 
