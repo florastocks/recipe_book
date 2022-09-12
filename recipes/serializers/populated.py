@@ -4,7 +4,7 @@ from foodtypes.serializers.common import FoodTypeSerializer
 
 class PopulatedRecipeSerializer(RecipeSerializer):
   reviews = ReviewSerializer(many=True)
-  foodtypes = FoodTypeSerializer(many=True)
+  foodtype = FoodTypeSerializer(many=True)
 
 class PopulatedRecipeSerializerFoodType(RecipeSerializer):
-  foodtypes = FoodTypeSerializer(many=True)
+  foodtype = FoodTypeSerializer(many=True)

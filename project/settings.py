@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'recipes',
     'reviews',
     'foodtypes',
+    'jwt_auth',
 
 
 ]
@@ -106,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# AUTH_USER_MODEL = 'jwt_auth.User'
+AUTH_USER_MODEL = 'jwt_auth.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/

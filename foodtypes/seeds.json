@@ -1,0 +1,44 @@
+[
+{
+  "model": "foodtypes.foodtype",
+  "pk": 1,
+  "fields": {
+    "name": "Pizza"
+  }
+},
+{
+  "model": "foodtypes.foodtype",
+  "pk": 2,
+  "fields": {
+    "name": "Pasta"
+  }
+},
+{
+  "model": "foodtypes.foodtype",
+  "pk": 3,
+  "fields": {
+    "name": "Salad"
+  }
+},
+{
+  "model": "foodtypes.foodtype",
+  "pk": 4,
+  "fields": {
+    "name": "noodles"
+  }
+},
+{
+  "model": "foodtypes.foodtype",
+  "pk": 5,
+  "fields": {
+    "name": "Vegetarian"
+  }
+},
+{
+  "model": "foodtypes.foodtype",
+  "pk": 6,
+  "fields": {
+    "name": "Comfort Food"
+  }
+}
+]

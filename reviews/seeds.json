@@ -1,0 +1,12 @@
+[
+{
+  "model": "reviews.review",
+  "pk": 2,
+  "fields": {
+    "title": "this was yum",
+    "text": "made last night and love",
+    "created_at": "2022-09-09T16:17:25.911Z",
+    "recipe": 1
+  }
+}
+]
