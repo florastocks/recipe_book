@@ -5,6 +5,7 @@ from rest_framework.exceptions import NotFound
 
 from .serializers.common import ReviewSerializer
 from .models import Review
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 # Create your views here.
 
@@ -20,15 +21,19 @@ class ReviewListView(APIView):
       return Response(e.__dict__ if e.__dict__ else str(e), status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 class ReviewDetailView(APIView):
+  parser_classes = (IsAuthenticatedOrReadOnly, )
+
   def get_review(self, pk):
     try: 
       return Review.objects.get(pk=pk)
     except Review.DoesNotExist:
       raise NotFound("Review was not found!")
 
-  def delete(self, _request, pk):
-    review_to_delete = self.get_review(pk)
-    review_to_delete.delete()
+  def delete(self, request, pk):
+    print("User Request", request.user)
+
+    # review_to_delete = self.get_review(pk)
+    # review_to_delete.delete()
     return Response(status=status.HTTP_204_NO_CONTENT)
   
   def put(self, request, pk):

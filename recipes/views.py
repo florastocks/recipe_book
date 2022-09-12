@@ -6,9 +6,12 @@ from rest_framework.exceptions import NotFound
 from .models import Recipe
 from .serializers.common import RecipeSerializer
 from .serializers.populated import PopulatedRecipeSerializer, PopulatedRecipeSerializerFoodType
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 # Create your views here.
 class RecipeListView(APIView):
+  permission_classes = (IsAuthenticatedOrReadOnly, )
+
   def get(self, _request):
     recipes = Recipe.objects.all()
     print("recipies -> ", recipes)

@@ -1,4 +1,3 @@
-from pyexpat import model
 from django.db import models
 
 # Create your models here.
@@ -11,4 +10,4 @@ class Recipe(models.Model):
   )
 
   def __str__(self):
-    return f"{self.title} - {self.foodtype}"
+    return f"{self.title}"
