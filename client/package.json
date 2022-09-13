@@ -8,6 +8,7 @@
     "@mui/material": "^5.10.5",
     "@mui/system": "^5.10.5",
     "axios": "^0.25.0",
+    "cloudinary-react": "^1.8.1",
     "eslint-plugin-react": "^7.31.8",
     "mui": "^0.0.1",
     "react": "^18.2.0",

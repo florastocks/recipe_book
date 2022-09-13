@@ -4,6 +4,7 @@ import { TextField } from '@mui/material'
 import axios from 'axios'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Upload from './Upload'
 
 const Register = () => {
 
@@ -50,9 +51,10 @@ const Register = () => {
           <form className='form' onSubmit={onSubmit}>
             <h3 className='form-header'>Register</h3>
             <TextField required error={emailError ? true : false} className='form-input' name='email' label="Email" value={data.email} onChange={handleChange}/>
-            <TextField required error={userError ? true : false} className='form-input' name='username' label="Username" value={data.usename} onChange={handleChange}/>
+            <TextField required error={userError ? true : false} className='form-input' name='username' label="Username" value={data.username} onChange={handleChange}/>
             <TextField required error={passError ? true : false} className='form-input' name='password' type='password' label="Password" value={data.password} onChange={handleChange}/>
             <TextField required error={passError ? true : false} className='form-input' name='password_confirmation' type='password' label="Password Confirmation" value={data.password_confirmation} onChange={handleChange}/>
+            <Upload name='profile_image' setData={setData} data={data} />
             <input type="submit" value="Register" className='submit-btn' />
           </form>
         </Row>
