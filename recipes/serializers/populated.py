@@ -1,9 +1,9 @@
 from .common import RecipeSerializer
-from reviews.serializers.common import ReviewSerializer
+from reviews.serializers.populated import PopulatedReviewSerializer
 from foodtypes.serializers.common import FoodTypeSerializer
 
 class PopulatedRecipeSerializer(RecipeSerializer):
-  reviews = ReviewSerializer(many=True)
+  reviews = PopulatedReviewSerializer(many=True)
   foodtype = FoodTypeSerializer(many=True)
 
 class PopulatedRecipeSerializerFoodType(RecipeSerializer):

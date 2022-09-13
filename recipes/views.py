@@ -28,8 +28,8 @@ class RecipeListView(APIView):
       recipe_to_add.save()
       return Response(recipe_to_add.data, status=status.HTTP_201_CREATED)
     except Exception as e:
-      print('ERROR')
-    return Response(str(e), status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+      print(e)
+      return Response(e.__dict__ if e.__dict__ else str(e), status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 
 class RecipeDetailView(APIView):

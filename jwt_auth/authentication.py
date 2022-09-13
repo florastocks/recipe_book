@@ -22,7 +22,7 @@ class JWTAuthentication(BaseAuthentication):
       print("Failure at Token Syntax")
       raise PermissionDenied("Invalid Token")
     
-    token = header.replace('Bearer', "")
+    token = header.replace('Bearer ', "")
 
     try:
       payload = jwt.decode(token, settings.SECRET_KEY, ["HS256"])
