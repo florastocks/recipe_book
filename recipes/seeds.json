@@ -5,6 +5,7 @@
   "fields": {
     "title": "yummy Spag Bol",
     "instructions": "get your mince and cook slowly until grey etc etc",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663161208/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ_znlmvm.jpg",
     "foodtype": [
       2,
       6
@@ -17,6 +18,7 @@
   "fields": {
     "title": "gooey Chocolate brownies",
     "instructions": "lots of chocolate, some cake mix, some chocolate chunks",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663161208/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ_znlmvm.jpg",
     "foodtype": [
       6
     ]
@@ -28,6 +30,7 @@
   "fields": {
     "title": "pepperoni Pizza",
     "instructions": "pizza base, tomato sauce, slices of pepperoni",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663161208/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ_znlmvm.jpg",
     "foodtype": [
       1,
       6
@@ -40,6 +43,7 @@
   "fields": {
     "title": "spicy curry",
     "instructions": "add ingredients and heat up",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663161208/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ_znlmvm.jpg",
     "foodtype": [
       6
     ]
@@ -51,6 +55,7 @@
   "fields": {
     "title": "spicy curry 2",
     "instructions": "add ingredients and heat up",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663161208/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ_znlmvm.jpg",
     "foodtype": [
       1
     ]

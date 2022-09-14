@@ -54,7 +54,7 @@ const Register = () => {
             <TextField required error={userError ? true : false} className='form-input' name='username' label="Username" value={data.username} onChange={handleChange}/>
             <TextField required error={passError ? true : false} className='form-input' name='password' type='password' label="Password" value={data.password} onChange={handleChange}/>
             <TextField required error={passError ? true : false} className='form-input' name='password_confirmation' type='password' label="Password Confirmation" value={data.password_confirmation} onChange={handleChange}/>
-            <Upload name='profile_image' setData={setData} data={data} />
+            <Upload name='profile_image' setData={setData} data={data} value={data.profile_image}/>
             <input type="submit" value="Register" className='submit-btn' />
           </form>
         </Row>
