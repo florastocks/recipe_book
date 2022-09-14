@@ -8,6 +8,7 @@ class Recipe(models.Model):
     "foodtypes.FoodType",
     related_name="recipes"
   )
+  image= models.URLField(max_length=500, default='https://res.cloudinary.com/aaf-proj3/image/upload/v1663161208/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ_znlmvm.jpg')
 
   def __str__(self):
     return f"{self.title}"

@@ -6,7 +6,41 @@
     "title": "this was yum",
     "text": "made last night and love",
     "created_at": "2022-09-09T16:17:25.911Z",
-    "recipe": 1
+    "recipe": 1,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 3,
+  "fields": {
+    "title": "could make again",
+    "text": "quick, easy, and delicious",
+    "created_at": "2022-09-12T18:37:10.757Z",
+    "recipe": 4,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 4,
+  "fields": {
+    "title": "horrible! dont try",
+    "text": "not worth your time",
+    "created_at": "2022-09-12T18:37:53.799Z",
+    "recipe": 4,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 5,
+  "fields": {
+    "title": "i will delete this",
+    "text": "this is going to be deleted",
+    "created_at": "2022-09-12T19:07:51.392Z",
+    "recipe": 2,
+    "owner": 1
   }
 }
 ]
