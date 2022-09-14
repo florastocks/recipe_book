@@ -13,20 +13,23 @@ const Login = () => {
   const [ error, setError ] = useState('')
   const [ login, setLogin ] = useState(false)
 
+  const handleChange = (event) => {
+    setData({ ...data, [event.target.name]: event.target.value })
+    setError('')
+  }
+
   const handleSubmit = async (event) => {
     event.preventDefault()
 
+    console.log(axios.defaults.headers.common)
     try {
-      const res = await axios.post('/login', data)
-
+      const res = await axios.post('/api/auth/login/', data)
       //we get back the token
       const { token } = res.data
       localStorage.setItem('recipes', token)
       // add token to header for all requests
       axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
       setLogin(true)
-
-
 
     } catch (error) {
       console.log(error)
@@ -40,8 +43,8 @@ const Login = () => {
         <Row>
           <form className='form' onSubmit={handleSubmit}>
             <h3 className='form-header'>Login</h3>
-            <TextField required className='form-input' name='email' label="Email" />
-            <TextField required className='form-input' name='password' label="Password" />
+            <TextField required className='form-input' name='email' value={data.email} label="Email" onChange={handleChange} />
+            <TextField required className='form-input' type='password' name='password' value={data.password} label="Password" onChange={handleChange}/>
             <input type="submit" value="Login" className='submit-btn' />
           </form>
         </Row>

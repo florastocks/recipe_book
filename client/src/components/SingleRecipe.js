@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios' 
 import { useParams } from 'react-router-dom'
 import Reviews from './Reviews'
+import Container from 'react-bootstrap/Container'
 
 const SingleRecipe = () => {
 
@@ -21,7 +22,11 @@ const SingleRecipe = () => {
     getData()
   }, [])
 
-  return <h1>Single Recipe Page</h1>
+  return (
+    <Container>
+      <Reviews reviews={recipe.reviews} />
+    </Container>
+  )
 }
 
 export default SingleRecipe

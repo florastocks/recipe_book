@@ -31,11 +31,11 @@ const AllRecipes = () => {
       <Row className='card-row'>
         {allRecipes.map( recipe => {
           const { _id, title } = recipe
-
+          console.log(_id)
           return (
             <Col key={_id} md='4' className="col-allRecipes" mb='5'>
               { title ? 
-                <Link to={`api/recipes/${_id}/`}>
+                <Link to={`/recipes/${_id}/`}>
                   <Card className="recipe-card">
                     <Card.Body>
                       <Card.Title className="card-title">{title}</Card.Title>
