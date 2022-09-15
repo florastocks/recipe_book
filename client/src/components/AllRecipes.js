@@ -15,7 +15,7 @@ const AllRecipes = () => {
     const getData = async () => {
       try {
         const { data } = await axios.get('/api/recipes/')
-        console.log(data)
+        // console.log(data)
         setAllRecipes(data)
       } catch (error) {
         console.log(error)

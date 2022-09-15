@@ -17,7 +17,7 @@ const App = () => {
   useEffect(() => {
     const getData = async () => {
       const { data } = await axios.get('/api/recipes/') // * <-- replace with your endpoint
-      console.log(data)
+      // console.log(data)
     }
     getData()
   })
@@ -34,7 +34,7 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/user-profile' element={<UserProfile />} />
-          <Route path='/add-review/:recipeId' element={<AddReview />} />
+          <Route path='/review/:recipeId' element={<AddReview />} />
         </Routes>
         <Footer />
       </BrowserRouter>

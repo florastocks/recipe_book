@@ -7,6 +7,7 @@ import { LinearProgress } from '@mui/material'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const SingleRecipe = () => {
 
@@ -14,6 +15,7 @@ const SingleRecipe = () => {
   const [ recipe, setRecipe ] = useState(null)
   const [ error, setError ] = useState(false)
 
+  const navigate = useNavigate()
 
   useEffect(() => {
     const getData = async () => {
@@ -27,6 +29,15 @@ const SingleRecipe = () => {
     getData()
   }, [])
 
+  const handleDeleteRecipe = async () => {
+    try {
+      const deleteRecipe = await axios.delete(`/api/recipes/${id}`)
+      navigate('/allrecipes')
+
+    } catch (error) {
+      console.log(error)
+    }
+  }
   return (
     <Container>
       { recipe ?
@@ -63,7 +74,6 @@ const SingleRecipe = () => {
           {error ? 'Something went Wrong, Please try again later' : <div className='loading-bar'> <br /> <LinearProgress color="success" /> </div>}
         </h2>
       }
-      <h1>single property page</h1>
     </Container>
   )
 }

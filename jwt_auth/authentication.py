@@ -16,7 +16,6 @@ class JWTAuthentication(BaseAuthentication):
     header = request.headers.get("Authorization")
 
     if not header:
-      print("no header")
       return None 
 
     if not header.startswith("Bearer"):
@@ -28,6 +27,7 @@ class JWTAuthentication(BaseAuthentication):
     try:
       payload = jwt.decode(token, settings.SECRET_KEY, ["HS256"])
       user = User.objects.get(pk=payload.get('sub'))
+      
     except jwt.exceptions.InvalidTokenError:
       print("Failed at Token Decode")
       raise PermissionDenied("Invalid Token")

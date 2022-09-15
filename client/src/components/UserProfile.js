@@ -26,8 +26,8 @@ const UserProfile = () => {
         setError(error.response.data.message)
       }
     }
-
-  })
+    getData()
+  }, [])
   return <h1>User Profile Page</h1>
 }
 
