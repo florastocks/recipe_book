@@ -5,13 +5,14 @@ import { TextField } from '@mui/material'
 import Slider from '@mui/material/Slider'
 import { useParams } from 'react-router-dom'
 
-const UpdateReview = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-  }, [])
+const UpdateReview = ({ review }) => {
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+  // }, [])
 
-  const { recipeId } = useParams()
-  const { reviewId } = useParams()
+  const { recipeId, reviewId } = useParams()
+  console.log(reviewId)
+  console.log(recipeId)
 
   const [data, setData] = useState({
     title: '',
@@ -21,7 +22,7 @@ const UpdateReview = () => {
   })
 
   const [error, setError] = useState('')
-  const [oldData, setOldData] = useState('')
+  // const [oldData, setOldData] = useState('')
 
   const handleChange = (event) => {
     setData({ ...data, [event.target.name]: event.target.value })
@@ -45,7 +46,7 @@ const UpdateReview = () => {
     event.preventDefault()
 
     try {
-      const res = await axios.put(`/api/reviews/${reviewId}`, data)
+      const res = await axios.put(`/api/reviews/${reviewId}/`, data)
       console.log('review updated')
     } catch (error) {
       console.log(error)
@@ -55,6 +56,7 @@ const UpdateReview = () => {
 
   return (
     <main className='form=page'>
+      <h1>Update page</h1>
       <Container>
         <Row>
           <form className='form' onSubmit={onSubmit}>

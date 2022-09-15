@@ -36,7 +36,7 @@ const App = () => {
           <Route path='/register' element={<Register />} />
           <Route path='/user-profile' element={<UserProfile />} />
           <Route path='/review/:recipeId' element={<AddReview />} />
-          <Route path='/review/:reviewId' element={<UpdateReview />} />
+          <Route path='/update-review/:recipeId/:reviewId' element={<UpdateReview />} />
         </Routes>
         <Footer />
       </BrowserRouter>

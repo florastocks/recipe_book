@@ -46,6 +46,7 @@ class ReviewDetailView(APIView):
     return Response(status=status.HTTP_204_NO_CONTENT)
   
   def put(self, request, pk):
+    request.data['owner'] = request.user.id
     review_to_update = self.get_review(pk=pk)
     updated_review = ReviewSerializer(review_to_update, data=request.data)
     try:

@@ -12,7 +12,6 @@ import { useNavigate } from 'react-router-dom'
 const SingleRecipe = () => {
 
   const { id } = useParams()
-  const { reviewId } = useParams()
 
   const [ recipe, setRecipe ] = useState(null)
   const [ error, setError ] = useState(false)
@@ -25,6 +24,7 @@ const SingleRecipe = () => {
       try {
         const { data } = await axios.get(`/api/recipes/${id}`)
         setRecipe(data)
+        console.log(data)
       } catch (error) {
         console.log(error)
       }
@@ -32,6 +32,7 @@ const SingleRecipe = () => {
     getData()
   }, [])
 
+  
   // const handleDeleteRecipe = async () => {
   //   try {
   //     const deleteRecipe = await axios.delete(`/api/recipes/${id}`)
@@ -68,7 +69,7 @@ const SingleRecipe = () => {
             :
             <div className="review-container">
               <h3 className="review-heading">Reviews:</h3>
-              <Link className="btn-leave-review" as="link" to={`/review/${reviewId}`}>Tried it? Be the First to leave a Recipe!</Link>
+              <Link className="btn-leave-review" as="link" to={`/review/${id}`}>Tried it? Be the First to leave a Recipe!</Link>
             </div>
           }
         </>

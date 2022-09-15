@@ -42,7 +42,7 @@ class RecipeDetailView(APIView):
       raise NotFound(detail="Recipe Not Found")
 
   def get(self, request, pk):
-    print("trying to get book -> ", request.data)
+    print("trying to get recipe -> ", request.data)
     recipe = self.get_recipe(pk=pk)
     serialized_recipe = PopulatedRecipeSerializer(recipe)
     return Response(serialized_recipe.data)
