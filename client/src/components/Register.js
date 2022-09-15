@@ -4,7 +4,6 @@ import { TextField } from '@mui/material'
 import axios from 'axios'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import Upload from './Upload'
 
 const Register = () => {
 
@@ -41,9 +40,19 @@ const Register = () => {
 
     } catch (error) {
       console.log(error)
+      setError(error.response.data.message)
+
+      if (error.response.data.message === 'Passwords do not match') {
+        setPassError('issue here')
+      }
+      if (error.response.data.message === 'The Emails already exists - please login'){
+        setEmailError('issue here')
+      }
+      if (error.response.data.message === 'This Username already exists, Please choose another'){
+        setUserError('issue here')
+      }
     }
   }
-
   return (
     <main className="form-page">
       <Container>
@@ -54,7 +63,7 @@ const Register = () => {
             <TextField required error={userError ? true : false} className='form-input' name='username' label="Username" value={data.username} onChange={handleChange}/>
             <TextField required error={passError ? true : false} className='form-input' name='password' type='password' label="Password" value={data.password} onChange={handleChange}/>
             <TextField required error={passError ? true : false} className='form-input' name='password_confirmation' type='password' label="Password Confirmation" value={data.password_confirmation} onChange={handleChange}/>
-            <Upload name='profile_image' setData={setData} data={data} value={data.profile_image}/>
+            {error && <div className='error-message'>{error}</div>}
             <input type="submit" value="Register" className='submit-btn' />
           </form>
         </Row>

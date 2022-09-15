@@ -22,13 +22,13 @@ const Upload = ({ data, setData }) => {
 
     const File = await res.json()
     console.log(File.secure_url)
-    setData({ ...data, profile_image: File.secure_url })
+    setData({ ...data, image: File.secure_url })
     setLoading(false)
   }
 
   return (
     <div>
-      <input type="file" name='profile_image' onChange={uploadImage} />
+      <input type="file" name='image' onChange={uploadImage} />
       <br />
       {loading ? (<h3>Loading...</h3>) : <img src={data.images} style={{ width: '200px' }}/>}
     </div>

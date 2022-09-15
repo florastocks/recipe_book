@@ -13,7 +13,7 @@ const Header = () => {
       <NavDropdown title={<Avatar />} className="nav-drop" >
         <NavDropdown.Item as={Link} to='/login'>Login</NavDropdown.Item>
         <NavDropdown.Item as={Link} to='/register'>Register</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to='/userprofile'>Profile Page</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to='/user-profile'>Profile Page</NavDropdown.Item>
       </NavDropdown>
     </Navbar>
     

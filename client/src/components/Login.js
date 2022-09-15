@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
 
@@ -45,7 +46,12 @@ const Login = () => {
             <h3 className='form-header'>Login</h3>
             <TextField required className='form-input' name='email' value={data.email} label="Email" onChange={handleChange} />
             <TextField required className='form-input' type='password' name='password' value={data.password} label="Password" onChange={handleChange}/>
+            {error && <div className='error-message'>{error}</div>}
             <input type="submit" value="Login" className='submit-btn' />
+            { login && 
+            <>
+              <Link as='btn' to='/' className='login-success'>Login Successful! Click to go Home</Link>
+            </>}
           </form>
         </Row>
       </Container>

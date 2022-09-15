@@ -30,12 +30,12 @@ const AllRecipes = () => {
       <h1>recipes</h1> 
       <Row className='card-row'>
         {allRecipes.map( recipe => {
-          const { _id, title, image } = recipe
-          console.log(_id)
+          const { id, title, image } = recipe
+          console.log(id, title)
           return (
-            <Col key={_id} md='4' className="col-allRecipes" mb='5'>
+            <Col key={id} md='4' className="col-allRecipes" mb='5'>
               { title ? 
-                <Link to={`/recipes/${_id}/`}>
+                <Link to={`/recipes/${id}/`}>
                   <Card className="recipe-card">
                     <Card.Body>
                       <img className='card-img-top' src={image} alt={title}/>
