@@ -8,7 +8,7 @@ const Reviews = ({ reviews, id }) => {
   const handleDelete = async (reviewId) => {
     try {
       console.log({ reviewId })
-      const deleteReview = await axios.delete(`/api/reviews/${reviewId}`)
+      const deleteReview = await axios.delete(`/api/reviews/${reviewId}/`)
       console.log('delete Review button clicked ->', deleteReview)
       window.location.reload()
       
@@ -20,9 +20,9 @@ const Reviews = ({ reviews, id }) => {
   }
   return (
     <Row>
-      <section className='review-container'>
+      <section className='singleRecipe-container'>
         <h3 className="review-heading">What Others Thought About This Recipe:</h3>
-        <p className="review=para">
+        <p className='singleRecipe-para'>
           {reviews.map(review => {
             const { title, rating, text } = review
             return (

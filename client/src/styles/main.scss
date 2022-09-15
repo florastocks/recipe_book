@@ -1,7 +1,27 @@
+
+$main-font: 'Quicksand', sans-serif;
+$light-blue: #d8e3f0;
 * {
   box-sizing: border-box;
 }
+body {
+  background-color: #3b434d;
+}
+h1 {
+  font-family: $main-font;
+  font-weight: 500;
+}
 // NavBar
+.navbar {
+  background-color: $light-blue;
+}
+.fixed-bottom {
+  background-color: $light-blue;
+  p {
+    text-align: center;
+  }
+}
+
 #navbar-container{
   border: 1px solid black;
   display: flex;
@@ -11,7 +31,28 @@
   margin: 0;
   height: 8vh;
 }
-
+//dropdown
+.dropdown-toggle {
+  margin-left: 10px;
+  font-family: $main-font;
+  a{
+    margin: 10px;
+  }
+}
+.dropdown-menu {
+  display: flex;
+  font-family: $main-font;
+  font-weight: 300;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.dropdown-toggle::after {
+  display: none !important;
+  a{
+    margin: 10px;
+  }
+}
 //Login/Register page
 .form {
   margin: 50px auto;
@@ -27,6 +68,8 @@
   max-width: 80vw;
   margin: 60px auto;
   border-radius: 20px;
+  background-color: $light-blue;
+  box-shadow: 0px 2px 10px rgb(0 0 0 / 70%);
 }
 
 .form-input,
@@ -37,28 +80,36 @@ textarea {
 }
 
 .submit-btn{
-  align-self: center;
-  border: 1px solid #b6b6b6;
-  border-radius: 4px;
-  margin: 3px auto;
-  width: 100%;
-  height: 3vh;
+  height: 40px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
 }
 
 // recipes Cards 
 
 .card-img-top{
   object-fit: cover;
-  width: 90%;
+  width: 100%;
+  border-radius: 10px;
   height: 250px;
 }
 
 .recipe-card{
   height: 40vh;
-  border: 1px solid black;
   border-radius: 5px;
   width: 25vw;
-  margin: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 10px rgb(0 0 0 / 50%);
+  background-color: #778597e1;
+  font-family: $main-font;
+  .card-title{
+    font-size: 18px;
+    font-weight: 200;
+    padding: 5px;
+  }
 }
 
 a{
@@ -77,4 +128,40 @@ a{
 // Errors
 .error-message {
   color: red;
+}
+
+// ------ Recipe page -------
+.recipe-heading {
+  text-align: center;
+}
+.top-section {
+  display: flex;
+  align-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.single-img {
+  height: 80vh;
+  border-radius: 10px;
+}
+
+.singleRecipe-container{
+  h3{
+    margin: 0;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid white;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.singleRecipe-para{
+  font-size: 20px;
+  font-weight: 200;
+  padding: 10px;
+  margin: 0;
 }

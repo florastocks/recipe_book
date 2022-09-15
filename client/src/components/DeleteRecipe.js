@@ -1,4 +1,0 @@
-
-const DeleteReview = async () => {
-
-}

@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row'
 import { TextField, TextareaAutosize } from '@mui/material'
 import axios from 'axios'
 import Slider from '@mui/material/Slider'
-import UserProfile from './UserProfile'
+import { useNavigate } from 'react-router-dom'
 
 const AddReview = () => {
 
@@ -24,6 +24,8 @@ const AddReview = () => {
   const [error, setError] = useState('')
   const [login, setLogin] = useState(false)
 
+  const navigate = useNavigate()
+
   const handleChange = (event) => {
     setData({ ...data, [event.target.name]: event.target.value })
     setError('')
@@ -37,6 +39,7 @@ const AddReview = () => {
     try {
       const res = await axios.post('/api/reviews/', data)
       console.log('review posted')
+      navigate(-1)
 
     } catch (error) {
       console.log(error)

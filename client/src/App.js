@@ -9,7 +9,6 @@ import Register from './components/Register'
 import { useEffect } from 'react'
 import axios from 'axios'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import UserProfile from './components/UserProfile'
 import SingleRecipe from './components/SingleRecipe'
 import UpdateReview from './components/UpdateReviews'
 
@@ -34,7 +33,7 @@ const App = () => {
           <Route path='/add-recipe' element={<AddRecipe />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
-          <Route path='/user-profile' element={<UserProfile />} />
+          
           <Route path='/review/:recipeId' element={<AddReview />} />
           <Route path='/update-review/:recipeId/:reviewId' element={<UpdateReview />} />
         </Routes>

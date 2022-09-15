@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
 
@@ -19,11 +20,12 @@ const Login = () => {
     setData({ ...data, [event.target.name]: event.target.value })
     setError('')
   }
+  const navigate = useNavigate()
 
   const handleSubmit = async (event) => {
     event.preventDefault()
 
-    console.log(axios.defaults.headers.common)
+    // console.log(axios.defaults.headers.common)
     try {
       const res = await axios.post('/api/auth/login/', data)
       //we get back the token
@@ -33,7 +35,7 @@ const Login = () => {
       axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
       setLogin(true)
       setCurrentUser(data.id)
-      console.log(data)
+      navigate('/allrecipes')
     } catch (error) {
       console.log(error)
       setError(error.response.data.message)

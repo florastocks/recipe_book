@@ -48,18 +48,20 @@ const SingleRecipe = () => {
         <>
           <Row>
             <h1 className='recipe-heading'>{recipe.title}</h1>
-            <Col md='6'><img className="single-img" src={recipe.image} alt={recipe.title} /></Col>
+          </Row>
+          <section className='top-section'>
+            <Col md='6' ><img className="single-img" src={recipe.image} alt={recipe.title} /></Col>
             <Col md='6'>
-              <section className='ingredients-container'>
+              <section className='singleRecipe-container'>
                 <h3 className='ingredients-heading'>Ingredients</h3>
-                <p className='ingredients-para'>{recipe.ingredients}</p>
+                <p className='singleRecipe-para'>{recipe.ingredients}</p>
               </section>
             </Col>
-          </Row>
+          </section>
           <Row>
-            <section className='instructions-container'>
+            <section className='singleRecipe-container'>
               <h3 className='instructions-heading'>Method:</h3>
-              <p className='instructions-para'>{recipe.instructions}</p>
+              <p className='singleRecipe-para'>{recipe.instructions}</p>
             </section>
           </Row>
           {recipe.reviews.length > 0 ?
@@ -67,7 +69,7 @@ const SingleRecipe = () => {
               <Reviews reviews={recipe.reviews} id={id} />
             </>
             :
-            <div className="review-container">
+            <div className="singleRecipe-container">
               <h3 className="review-heading">Reviews:</h3>
               <Link className="btn-leave-review" as="link" to={`/review/${id}`}>Tried it? Be the First to leave a Recipe!</Link>
             </div>
