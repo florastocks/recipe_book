@@ -1,60 +1,65 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import { TextField, TextareaAutosize } from '@mui/material'
 import axios from 'axios'
+import { Row, Container } from 'react-bootstrap'
+import { TextField } from '@mui/material'
 import Slider from '@mui/material/Slider'
-import UserProfile from './UserProfile'
+import { useParams } from 'react-router-dom'
 
-const AddReview = () => {
-
+const UpdateReview = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
   }, [])
 
   const { recipeId } = useParams()
+  const { reviewId } = useParams()
 
-  const [ data, setData ] = useState({
+  const [data, setData] = useState({
     title: '',
-    rating: '',
     text: '',
+    rating: '',
     recipe: recipeId,
   })
+
   const [error, setError] = useState('')
-  const [login, setLogin] = useState(false)
+  const [oldData, setOldData] = useState('')
 
   const handleChange = (event) => {
     setData({ ...data, [event.target.name]: event.target.value })
     setError('')
-
-    console.log(data)
+    console.log('handle change data -> ', data)
   }
 
+  // getting old data for placeholder
+  // useEffect(() => {
+  //   const getData = async () => {
+  //     try {
+  //       console.log({ recipeId }, { reviewId })
+  //       const { data } = await axios.get(``)
+  //     } catch (error) {
+  //       console.log(error)
+  //       setError(error.response.data.message)
+  //     }
+  //   }
+  // })
   const onSubmit = async (event) => {
     event.preventDefault()
 
     try {
-      const res = await axios.post('/api/reviews/', data)
-      console.log('review posted')
-
+      const res = await axios.put(`/api/reviews/${reviewId}`, data)
+      console.log('review updated')
     } catch (error) {
       console.log(error)
-
-      if (error.response.data.message === 'Unauthorized = No token provided') {
-        setError('Please Login to Review this Recipe')
-        setLogin(true)
-      } else { 
-        setError(error.response.data.message) 
-      }
+      setError(error.response.data.message)
     }
   }
+
   return (
     <main className='form=page'>
       <Container>
         <Row>
           <form className='form' onSubmit={onSubmit}>
-            <h3 className='text-center'>Give this Recipe a Review</h3>
+            <h3 className='text-center'>Update Your Review</h3>
+            <div>Rating:</div>
             <Slider defaultValue={1} valueLabelDisplay='auto' step={1} marks min={1} max={5} onChange={handleChange} name='rating'/>
             <TextField required className='form-input' name='title' label='Review Title' value={data.title} onChange={handleChange}/>
             <TextField required className='form-input' name='text' label='What did you think?' value={data.text} onChange={handleChange}/>
@@ -66,4 +71,4 @@ const AddReview = () => {
   )
 }
 
-export default AddReview
+export default UpdateReview

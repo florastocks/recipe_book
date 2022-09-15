@@ -1,7 +1,11 @@
 import Row from 'react-bootstrap/Row'
 import { Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 const Reviews = ({ reviews, id }) => {
+
+  const { reviewId } = useParams()
+
   return (
     <Row>
       <section className='review-container'>
@@ -14,6 +18,7 @@ const Reviews = ({ reviews, id }) => {
                 <div className="review-rating">{rating}</div>
                 <div className="review-title">{title}</div>
                 <div className="review-text">{text}</div>
+                <Link className='btn-update-review' as='link' to={`/review/${reviewId}`}>Update Your Review</Link>
               </>
             )
           })}

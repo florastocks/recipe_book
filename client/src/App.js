@@ -11,6 +11,7 @@ import axios from 'axios'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import UserProfile from './components/UserProfile'
 import SingleRecipe from './components/SingleRecipe'
+import UpdateReview from './components/UpdateReviews'
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
           <Route path='/register' element={<Register />} />
           <Route path='/user-profile' element={<UserProfile />} />
           <Route path='/review/:recipeId' element={<AddReview />} />
+          <Route path='/review/:reviewId' element={<UpdateReview />} />
         </Routes>
         <Footer />
       </BrowserRouter>

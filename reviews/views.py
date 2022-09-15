@@ -10,9 +10,12 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 # Create your views here.
 
 class ReviewListView(APIView):
+  permission_classes = (IsAuthenticatedOrReadOnly, )
+
   def post(self, request):
+    request.data['owner'] = request.user.id
     review_to_create = ReviewSerializer(data=request.data)
-    print('review create endpoint')
+    print('owner ->', request.user.id)
     try:
       
       review_to_create.is_valid(True) 

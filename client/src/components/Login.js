@@ -13,6 +13,7 @@ const Login = () => {
   })
   const [ error, setError ] = useState('')
   const [ login, setLogin ] = useState(false)
+  const [ currentUser, setCurrentUser ] = useState()
 
   const handleChange = (event) => {
     setData({ ...data, [event.target.name]: event.target.value })
@@ -31,7 +32,8 @@ const Login = () => {
       // add token to header for all requests
       axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
       setLogin(true)
-
+      setCurrentUser(data.id)
+      console.log(data)
     } catch (error) {
       console.log(error)
       setError(error.response.data.message)
