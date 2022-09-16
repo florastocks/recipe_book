@@ -4,6 +4,7 @@ import { Row, Container } from 'react-bootstrap'
 import { TextField } from '@mui/material'
 import Slider from '@mui/material/Slider'
 import { useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const UpdateReview = ({ review }) => {
   // useEffect(() => {
@@ -20,6 +21,8 @@ const UpdateReview = ({ review }) => {
     rating: '',
     recipe: recipeId,
   })
+
+  const navigate = useNavigate()
 
   const [error, setError] = useState('')
   // const [oldData, setOldData] = useState('')
@@ -48,6 +51,7 @@ const UpdateReview = ({ review }) => {
     try {
       const res = await axios.put(`/api/reviews/${reviewId}/`, data)
       console.log('review updated')
+      navigate(-1)
     } catch (error) {
       console.log(error)
       setError(error.response.data.message)
@@ -55,7 +59,7 @@ const UpdateReview = ({ review }) => {
   }
 
   return (
-    <main className='form=page'>
+    <main className='form-page'>
       <h1>Update page</h1>
       <Container>
         <Row>

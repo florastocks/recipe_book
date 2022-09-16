@@ -26,8 +26,8 @@ const AllRecipes = () => {
 
 
   return (
-    <Container>
-      <h1>recipes</h1> 
+    <Container className='recipes-container'>
+      <h1>Recipes</h1> 
       <Row className='card-row'>
         {allRecipes.map( recipe => {
           const { id, title, image } = recipe

@@ -23,16 +23,16 @@ const Reviews = ({ reviews, id }) => {
       <section className='singleRecipe-container'>
         <h3 className="review-heading">What Others Thought About This Recipe:</h3>
         <p className='singleRecipe-para'>
-          {reviews.map(review => {
+          {reviews.map((review, idx) => {
             const { title, rating, text } = review
             return (
-              <>
+              <div className='single-rev-cont' key={idx}>
                 <div className="review-rating">{'⭐️'.repeat(rating)}</div>
                 <div className="review-title">{title}</div>
                 <div className="review-text">{text}</div>
                 <Link className='btn-update-review' to={`/update-review/${id}/${review.id}`}>Update Your Review</Link>
                 <button className='btn-review-delete' onClick={() => handleDelete(review.id)}>Delete This Review</button>
-              </>
+              </div>
             )
           })}
         </p>

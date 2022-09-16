@@ -1,6 +1,10 @@
 
 $main-font: 'Quicksand', sans-serif;
 $light-blue: #d8e3f0;
+$text-shadow: 4px 4px #010d19;
+$dark-teq: #51999e;
+$brand-font: 'Montserrat', sans-serif;
+
 * {
   box-sizing: border-box;
 }
@@ -9,12 +13,19 @@ body {
 }
 h1 {
   font-family: $main-font;
-  font-weight: 500;
+  font-weight: 330;
+  text-shadow: 2px 2px black;
+  color: $dark-teq;
+  font-size: 2.5rem;
+  text-align: center;
 }
-// NavBar
+// ----------NavBar-------------------
 .navbar {
   background-color: $light-blue;
+  display: flex;
+  align-items: center;
 }
+
 .fixed-bottom {
   background-color: $light-blue;
   p {
@@ -22,36 +33,54 @@ h1 {
   }
 }
 
-#navbar-container{
-  border: 1px solid black;
+.brand{
+  font-family: $brand-font;
+  font-size: 2rem;
+}
+.Nav{
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0 !important;
+  .nav-link {
+    font-size: 1.2rem;
+    font-family: $main-font;
+    font-weight: 200;
+  }
+}
+#navbar-container{
+  // border: 1px solid black;
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
   padding: 5px;
   margin: 0;
   height: 8vh;
-}
-//dropdown
-.dropdown-toggle {
-  margin-left: 10px;
-  font-family: $main-font;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.847);
   a{
-    margin: 10px;
+    margin-right: 10px;
   }
 }
-.dropdown-menu {
+//dropdown
+
+.dropdown-menu{
   display: flex;
   font-family: $main-font;
   font-weight: 300;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  background-color: $light-blue;
+  border-radius: 5px;
+  a{
+    
+    padding: 3px;
+  }
 }
 .dropdown-toggle::after {
   display: none !important;
-  a{
-    margin: 10px;
-  }
+
 }
 //Login/Register page
 .form {
@@ -76,7 +105,8 @@ h1 {
 textarea {
   min-width: 10vw;
   width: 100%;
-  margin: 5px, 0, 5px, 0;
+  margin: 5px, 0, 10px, 0;
+  padding: 5px;
 }
 
 .submit-btn{
@@ -86,25 +116,102 @@ textarea {
   align-items: center;
   justify-content: center;
   margin: 15px auto;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgb(0 0 0 / 50%);
 }
+// ---- Landing ------
 
+.hero-container{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: #2b3b3dad;
+  margin-top: 25vh;
+  height: 30vh;
+  border-radius: 15px;
+  margin-left: 25%;
+  box-shadow: 0px 2px 10px rgb(0 0 0 / 50%);
+  .homepage-btn{
+    margin: 20px;
+    height: 30px;
+    border-radius: 5px;
+    width: 200px;
+    background-color: #2b3b3d95;
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 50%);
+    a{
+      color: $light-blue;
+      font-family: $main-font;
+      font-weight: 200;
+      letter-spacing: 0.6px;
+      font-size: 0.9rem;
+    }
+  }
+  .homepage-btn:hover{
+    background-color: #d8e3f097;
+    a{
+      color:#14171c;
+    }
+  }
+}
+.landing-title{
+  text-align: center;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 50px;
+  color: #51999e;
+  text-shadow: $text-shadow;
+  margin-bottom: 0;
+}
+.lead{
+  font-family: $main-font;
+  width: 50vw;
+  margin: auto;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: $light-blue;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+.images-col{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  margin-top: 10vh;
+}
+.image-ind{
+  height: 60vh;
+  margin: 1px;
+}
 // recipes Cards 
-
+.recipes-container{
+  width: 80vw;
+  margin: auto;
+}
 .card-img-top{
   object-fit: cover;
   width: 100%;
   border-radius: 10px;
-  height: 250px;
+  height: 300px;
 }
 
 .recipe-card{
   height: 40vh;
   border-radius: 5px;
+  max-width: 300px;
   width: 25vw;
-  margin-bottom: 30px;
+  margin-bottom: 5vh;
   box-shadow: 0px 2px 10px rgb(0 0 0 / 50%);
   background-color: #778597e1;
   font-family: $main-font;
+  margin-left: 1vw;
   .card-title{
     font-size: 18px;
     font-weight: 200;
@@ -133,28 +240,39 @@ a{
 // ------ Recipe page -------
 .recipe-heading {
   text-align: center;
+  color: $light-blue;
+  font-weight: 300;
+  font-size: 2.5rem;
+  text-shadow: 4px 4px #010d19;
 }
 .top-section {
   display: flex;
   align-content: space-around;
   align-items: center;
   flex-direction: column;
+  border-top: 1px solid $light-blue;
 }
 
 .single-img {
   height: 80vh;
   border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .singleRecipe-container{
   h3{
     margin: 0;
+    font-weight: 300;
+    font-size: 2rem;
+    color: $light-blue;
+    text-shadow: $text-shadow;
   }
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 2px solid white;
+  border-top: 1px solid $light-blue;
   padding-top: 40px;
   padding-bottom: 30px;
 }
@@ -162,8 +280,37 @@ a{
 .singleRecipe-para{
   font-size: 20px;
   font-weight: 200;
+  font-family: $main-font;
   padding: 10px;
   margin: 0;
+  word-spacing: 3px;
+  color: $light-blue;
+  width: 80vw;
+  line-height: 1.7;
+}
+//----------- review section --------------
+.review-heading{
+  font-weight: 300;
+  font-family: $main-font;
+  color: $light-blue;
+}
+.single-rev-cont{
+  padding-top: 20px;
+  font-family: $main-font;
+  text-align: center;
+  div{
+    padding: 5px;
+  }
+  .review-title{
+    font-weight: 300;
+    font-size: 1.3rem;
+    word-spacing: normal;
+    margin-bottom: 0;
+  }
+  .review-text{
+    font-size: 0.9rem;
+    word-spacing: normal;
+  }
 }
 
 .btn-update-review{
@@ -173,15 +320,57 @@ a{
   font-size: 14px;
   padding: 3px;
   margin: 7px;
+  font-family: $main-font;
+  font-weight: 300;
+}
+.btn-update-review:hover {
+  // color: ;
+  background-color: #627678;
 }
 .btn-review-delete{
   box-shadow: 0px 2px 10px rgb(0 0 0 / 70%);
-    background-color: #9babbf;
-    border-radius: 5px;
-    font-size: 14px;
-    padding: 3px;
-    margin-top: 0;
-    margin: 5px;
-    border: none;
+  background-color: #9babbf;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 4px;
+  margin-top: 0;
+  margin: 5px;
+  border: none;
+  font-family: $main-font;
+  font-weight: 300;
+}
+.btn-review-delete:hover {
+  background-color: #627678;
+}
+
+.btn-leave-review{
+  box-shadow: 0px 2px 10px rgb(0 0 0 / 70%);
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: $main-font;
+  font-weight: 200;
+  background-color: #59636e;
+}
+.btn-leave-review:hover {
+  background-color: #627678;
+}
+// -------- forms --------
+.form-input{
+  margin: 10px;
+}
+// ------Footer ------
+#footer {
+  width: 100vw;
+  margin-top: 89vh;
+  position: absolute;
+  p{
+    margin: 0;
     font-family: $main-font;
+    font-weight: 300;
+    a{
+      color:#20262d;
+      font-weight: 400;
+    }
+  }
 }

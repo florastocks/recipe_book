@@ -53,7 +53,7 @@ const AddReview = () => {
     }
   }
   return (
-    <main className='form=page'>
+    <main className='form-page'>
       <Container>
         <Row>
           <form className='form' onSubmit={onSubmit}>

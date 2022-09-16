@@ -9,12 +9,16 @@ const Header = () => {
   return (
     <Navbar id='navbar-container'>
       <Navbar.Brand as={Link} to='/' className='brand'>Recipes</Navbar.Brand>
-      <Nav.Link as={Link} to='/allrecipes'>All Recipes</Nav.Link>
-      <NavDropdown title={<Avatar />} className="nav-drop" >
-        <NavDropdown.Item as={Link} to='/login'>Login</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to='/register'>Register</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to='/add-recipe'>Add a Recipe</NavDropdown.Item>
-      </NavDropdown>
+      <Navbar.Collapse id='basic-navbar-nav' className='justify-content-end'>
+        <Nav className='Nav'>
+          <Nav.Link as={Link} to='/allrecipes'>All Recipes</Nav.Link>
+          <NavDropdown title={<Avatar />} className="nav-drop" data-bs-toggle="collapse" >
+            <NavDropdown.Item as={Link} to='/login'>Login</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to='/register'>Register</NavDropdown.Item>
+            {/* <NavDropdown.Item as={Link} to='/add-recipe'>Add a Recipe</NavDropdown.Item> */}
+          </NavDropdown>
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
     
   )
