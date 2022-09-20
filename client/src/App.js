@@ -28,14 +28,14 @@ const App = () => {
         <Header />
         <Routes>
           <Route path='/' element={<Landing />} />
-          <Route path='/allrecipes' element={<AllRecipes />} />
-          <Route path='/recipes/:id' element={<SingleRecipe />} />
-          <Route path='/add-recipe' element={<AddRecipe />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
+          <Route path='/allrecipes/' element={<AllRecipes />} />
+          <Route path='/recipes/:id/' element={<SingleRecipe />} />
+          <Route path='/add-recipe/' element={<AddRecipe />} />
+          <Route path='/login/' element={<Login />} />
+          <Route path='/register/' element={<Register />} />
           
-          <Route path='/review/:recipeId' element={<AddReview />} />
-          <Route path='/update-review/:recipeId/:reviewId' element={<UpdateReview />} />
+          <Route path='/review/:recipeId/' element={<AddReview />} />
+          <Route path='/update-review/:recipeId/:reviewId/' element={<UpdateReview />} />
         </Routes>
         <Footer />
       </BrowserRouter>
