@@ -90,8 +90,8 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
   'default': {
           'ENGINE': 'django.db.backends.postgresql_psycopg2',
-          'NAME': env('recipe-api'),
-          'HOST': env('localhost'),
+          'NAME': 'recipe-api',
+          'HOST': 'localhost',
           'PORT': 5432
   }
 }
