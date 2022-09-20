@@ -11,6 +11,10 @@ import { useNavigate } from 'react-router-dom'
 
 const SingleRecipe = () => {
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+  }, [])
+
   const { id } = useParams()
 
   const [ recipe, setRecipe ] = useState(null)
@@ -22,7 +26,7 @@ const SingleRecipe = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(`/api/recipes/${id}`)
+        const { data } = await axios.get(`/api/recipes/${id}/`)
         setRecipe(data)
         console.log(data)
       } catch (error) {

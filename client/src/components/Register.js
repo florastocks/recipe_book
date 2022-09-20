@@ -2,10 +2,14 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import { TextField } from '@mui/material'
 import axios from 'axios'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Register = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+  }, [])
 
   const [ data, setData ] = useState({
     email: '',

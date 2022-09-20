@@ -199,7 +199,7 @@ textarea {
   object-fit: cover;
   width: 100%;
   border-radius: 10px;
-  height: 300px;
+  height: 250px;
 }
 
 .recipe-card{
@@ -216,6 +216,10 @@ textarea {
     font-size: 18px;
     font-weight: 200;
     padding: 5px;
+  }
+  .card-body {
+    // background-color: #778597e1;
+    border-radius: 5px;
   }
 }
 

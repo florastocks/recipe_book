@@ -7,9 +7,10 @@ import { useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 
 const UpdateReview = ({ review }) => {
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-  // }, [])
+  
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+  }, [])
 
   const { recipeId, reviewId } = useParams()
   console.log(reviewId)

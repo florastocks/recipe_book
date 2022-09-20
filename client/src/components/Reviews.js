@@ -2,8 +2,13 @@ import Row from 'react-bootstrap/Row'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import { useEffect } from 'react'
 
 const Reviews = ({ reviews, id }) => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+  }, [])
 
   const handleDelete = async (reviewId) => {
     try {

@@ -7,6 +7,9 @@ import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+  }, [])
 
   const [ data, setData ] = useState({
     email: '',
