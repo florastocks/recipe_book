@@ -1,63 +1,340 @@
 [
 {
   "model": "recipes.recipe",
-  "pk": 1,
+  "pk": 6,
   "fields": {
-    "title": "yummy Spag Bol",
-    "instructions": "get your mince and cook slowly until grey etc etc",
-    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663161208/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ_znlmvm.jpg",
+    "title": "Chicken satay-style noodle salad",
+    "instructions": "Place a griddle pan on a medium heat to warm up. Drain 1 x 220g of pineapple rings, reserving the juice.\r\nPut 200g of vermicelli rice noodles into a large heatproof bowl, tip over 1 x 320g bag of stir-fry veg and cover with boiling kettle water. Leave to sit for 5 minutes, then drain.\r\nPeel and finely grate 1 clove of garlic, ½ a red chilli (deseed if you like) and the zest from 2 limes onto a platter. Add 2 tablespoons of teriyaki sauce, 2 tablespoons of crunchy peanut butter and the reserved pineapple juice, then squeeze over the juice from the zested limes. Mix well to combine (it’ll take a little while to come together).\r\nPlace the pineapple rings on the griddle until golden and bar-marked on both sides, then remove to a board.\r\nSpoon a third of the peanut dressing over 4 chicken thighs and toss to coat, then griddle for 4 minutes on each side, or until dark, gnarly and cooked through.\r\nRoughly chop the pineapple rings and add to the platter. Finely slice 1 bunch of fresh coriander (30g) and pick and finely slice 1 bunch of fresh mint (30g), then add to the platter, reserving a small handful for garnish. Add the drained veg and noodles, and toss everything together.\r\nSlice the chicken 1cm-thick, drizzle with 1 teaspoon of sesame oil and 2 teaspoons of sesame seeds, season, then toss to coat.\r\nToss the chicken with the noodles, scatter over the reserved herbs and finely slice and sprinkle over ½ a fresh red chilli.",
+    "ingredients": "1 x 220 g tin of pineapple rings in juice\r\n200 g vermicelli rice noodles\r\n1 x 320 g pack of stir-fry veg\r\n1 clove of garlic\r\n1 fresh red chilli\r\n2 limes\r\n2 tablespoons teriyaki sauce\r\n2 tablespoons crunchy peanut butter\r\n4 free-range chicken thighs , skin off, bone out\r\n1 bunch of fresh coriander , (30g)\r\n1 bunch of fresh mint , (30g)\r\n1 teaspoon sesame oil\r\n2 teaspoons sesame seeds",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663172793/Recipes/134449908_kniuqq.jpg",
+    "foodtype": [
+      3,
+      9
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 7,
+  "fields": {
+    "title": "Angry bean salad",
+    "instructions": "Carefully plunge the tomatoes into a pan of fast-boiling salted water for exactly 30 seconds, scoop out with a sieve and run under cold water.\r\nLine up the beans, remove just the stalk ends and place in the boiling water for 4 minutes.\r\nMeanwhile, pick the mint leaves, putting the baby leaves aside for garnish. Peel the garlic, then finely slice with the chillies.\r\nPinch and peel away the tomato skins, reserving the flesh (it’s a bit of a faff, but it’s worth it).\r\nDrain the beans, placing the pan back on a medium heat.\r\nDrizzle in 1 tablespoon of oil, then add the garlic, chilli and mint leaves. Fry for 2 minutes, add the tomatoes, vinegar and beans and simmer for 4 minutes, stirring regularly to break up the tomatoes.\r\nTaste and season to absolute perfection with sea salt and black pepper, then spoon on to a platter along with any tasty juices.\r\nScatter over the mozzarella and reserved mint leaves, and serve with hot toast.",
+    "ingredients": "400 g ripe mixed-colour cherry tomatoes\r\n400 g green and yellow beans\r\n4 sprigs of fresh mint\r\n4 cloves of garlic\r\n2 fresh red chillies\r\nolive oil\r\n3 tablespoons red wine vinegar , or balsamic vinegar\r\n8 bocconcini mozzarella , (150g)\r\n4 slices of rustic bread",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663174822/Recipes/92507805_ep2l1c.jpg",
+    "foodtype": [
+      3,
+      5
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 8,
+  "fields": {
+    "title": "Grilled chicken with charred pineapple salad",
+    "instructions": "Combine the oregano in a bowl with 1 to 2 tablespoons of oil, then season with sea salt and black pepper.\r\nUse a sharp knife to slice into the chicken breasts, then open each one out flat like a book to butterfly. Place in the bowl with the herby oil, turning until well coated, then leave to one side.\r\nCook the quinoa according to the packet instructions, then drain and set aside.\r\nFor the dressing, peel and destone the avocado half, then scoop the flesh into a blender. Add half the coriander (stalks and all) and the jalapeños, along with a splash of the pickling liquid and the juice of 1½ limes. Blitz until smooth, adding a splash of oil, if needed. Stir through the quinoa.\r\nFinely shred the cabbage, pick the remaining coriander leaves, then toss with the salad leaves.\r\nPlace a griddle pan over a high heat. Peel the pineapple, remove and discard any core, then chop into 4. Place on the hot griddle pan for a few minutes on each side, or until charred, and transfer to a chopping board.\r\nIn the same pan, griddle the chicken for 5 minutes on each side, or until charred and cooked through, then remove from the pan and leave to rest on the board for a few minutes.\r\nChop the griddled pineapple into bite-sized chunks, then slice the chicken into thin strips. Deseed and finely chop the chilli.\r\nDivide the yoghurt between four plates, then top with the chicken, adding the pineapple on one side and the dressed quinoa on the other. Toss the leaves and cabbage with the juice of the remaining lime half and a little salt and pepper, plus the chopped chilli. Divide between the plates, then serve.",
+    "ingredients": "1 teaspoon dried oregano\r\nolive oil\r\n2 x 150 g free-range chicken breasts\r\n150 g quinoa\r\n50 g white cabbage\r\n1 large handful of salad leaves\r\n¼ of a pineapple\r\n50 g natural yoghurt\r\n1 fresh red chilli\r\nDRESSING\r\n½ an avocado\r\n½ a bunch of fresh coriander , (15g)\r\n2 tablespoons pickled jalapeños\r\n2 limes",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663174910/Recipes/46400957_phd8oi.jpg",
+    "foodtype": [
+      3,
+      6
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 9,
+  "fields": {
+    "title": "Aubergine tartare",
+    "instructions": "Preheat the oven to 180ºC/350ºF/gas 4.\r\nCut 4 aubergines into 5cm-thick slices and arrange in one layer on a few roasting trays.\r\nPeel and finely slice 4 cloves of garlic. Make incisions in the aubergine, roughly the same size as the garlic slices, and pop a slice of garlic into each incision.\r\nDrizzle 1 tablespoon of olive oil over the aubergine, season with sea salt and black pepper, then sprinkle over 1 heaped teaspoon of dried oregano. Roast for 45 minutes, or until the aubergine is tender.\r\nPick and finely chop ½ a bunch each of fresh mint and flat-leaf parsley (30g total), then trim and finely slice 4 spring onions. Toast 50g blanched almonds in a dry pan until golden, then roughly chop.\r\nLeave the aubergine until cool enough to handle, then chop into 1cm cubes and add to a bowl with the herbs, spring onions, almonds and 1 tablespoons of baby capers. Season, drizzle with extra virgin olive oil and mix well.\r\nSlice 1 loaf of Greek bread (or a few pitta breads), toast on a griddle and drizzle with extra virgin olive oil. Halve 4 ripe tomatoes and rub the cut side on the toast, squeezing to get a lovely tomato coating.\r\nServe the aubergine tartare with the tomato toasts, and lemon wedges for squeezing over.",
+    "ingredients": "4 aubergines\r\n4 cloves of garlic\r\nolive oil\r\n1 heaped teaspoon dried oregano\r\n½ a bunch of fresh mint , (15g)\r\n½ a bunch of fresh flat-leaf parsley , (15g)\r\n4 spring onions\r\n50 g blanched almonds\r\n1 tablespoon baby capers\r\nextra virgin olive oil\r\n1 loaf of Greek bread or a few pitta breads",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663174934/Recipes/134449917_jsnqw8.jpg",
+    "foodtype": [
+      3,
+      5
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 10,
+  "fields": {
+    "title": "Asian-style tuna steak salad",
+    "instructions": "Finely chop 2 radishes with the pickled ginger, then dress with the soy, 1 tablespoon of extra virgin olive oil and 2 teaspoons of water and put aside.\r\nVery finely slice the remaining radishes with their leaves.\r\nPlace the beans in a non-stick frying pan on a high heat, cover with boiling kettle water, boil for 2 minutes, then drain. Return the pan to a medium-high heat.\r\nRub the tuna with 1 teaspoon of olive oil and a pinch of sea salt and black pepper, then sear for 1½ minutes on each side, so it’s blushing in the middle.\r\nDivide the beans and radishes between your plates, half-tear the tuna and place proudly on top, then spoon over the pickled ginger mixture, drizzling all the juices around the plate.\r\nFinish with 1 teaspoon of extra virgin olive oil.",
+    "ingredients": "200 g radishes , ideally with leaves\r\n2 heaped teaspoons pickled ginger\r\n2 teaspoons low-salt soy sauce\r\n250 g frozen soya beans\r\n2 x 150 g tuna steaks , (ideally 2cm thick), from sustainable sources",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663175035/Recipes/89081010_odpvbk.jpg",
+    "foodtype": [
+      3,
+      7
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 11,
+  "fields": {
+    "title": "Super couscous salad",
+    "instructions": "Place 100g of couscous into a mixing bowl with a pinch of sea salt and just cover with boiling water. Pop a plate on the top and leave for 5 to 10 minutes to do its thing.\r\nTrim the stalky-end off 1 small head of broccoli (250g) and place the whole broccoli head in a medium pan of boiling water over a medium-high heat and cook for about 4 minutes, or until bright green and tender.\r\nRemove with a pair of tongs and place in a colander to steam-dry for a minute or two.\r\nMake the dressing by peeling and crushing or finely grating ½ a clove of garlic into a clean jam jar.\r\nAdd 1 small handful each of sultanas and pine nuts, 2 tablespoons of extra virgin olive oil and squeeze in the juice from 1 orange.\r\nPick the leaves from ½ a bunch of fresh mint (15g) and set aside the smaller leaves for garnish. Finely chop the rest and add to the jar with a pinch of sea salt and black pepper. Pop the lid on and shake well to combine.\r\nOn a large chopping board, chop up the broccoli until fairly fine. Fluff up the couscous with a fork, then scrape the broccoli into the bowl and mix well.\r\nTake half the couscous to work with a little pot containing half the dressing and toss them together, scatter with half of the baby mint leaves and crumble over half of the feta before serving, then repeat the following day!",
+    "ingredients": "100 g couscous\r\n1 small head of broccoli , (250g)\r\n20 g feta cheese\r\nDRESSING\r\n½ a clove of garlic\r\n1 small handful of sultanas\r\n1 small handful of pine nuts\r\n2 tablespoons extra virgin olive oil\r\n1 orange\r\n½ a bunch of fresh mint , (15g)",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663175312/Recipes/70611584_zra1o6.jpg",
+    "foodtype": [
+      3,
+      5
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 12,
+  "fields": {
+    "title": "Rocket & pistachio pesto pasta",
+    "instructions": "Pick 70g of wild rocket into a pestle and mortar, then bash to a paste with a pinch of sea salt.\r\nPeel and bash in ½ a clove of garlic, then pound in 50g of unshelled pistachios until fine. Muddle in 4 tablespoons of olive oil, finely grate in 25g of Parmesan, then squeeze in the juice of 1 lemon. Season to perfection with salt and black pepper, then taste and tweak the pesto to your liking.\r\nCook 300g of dried linguine in a pan of boiling water according to the packet instructions, then drain, reserving a mugful of starchy cooking water.\r\nMeanwhile, snap off the woody ends from 320g of asparagus.\r\nToss the pasta with the pesto, then using a speed-peeler, peel lengths of the asparagus into the pan, loosening with a splash of reserved cooking water, if needed.\r\nDrizzle with 1 tablespoon of olive oil, and finish with the remaining 10g of rocket and a fine grating of Parmesan. Delicious served with a crunchy salad.",
+    "ingredients": "80 g wild rocket\r\n1/2 a clove of garlic\r\n50 g shelled unsalted pistachios\r\nolive oil\r\n25 g Parmesan cheese , plus extra to serve\r\n1 lemon\r\n320 g asparagus\r\n300 g dried linguine",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663175437/Recipes/134763338_pzizwu.jpg",
+    "foodtype": [
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 13,
+  "fields": {
+    "title": "Quick seafood pasta",
+    "instructions": "Cook 300g of dried linguine in a large pan of boiling salted water according to the packet instructions, then drain, reserving a mugful of starchy water.\r\nMeanwhile, slice 250g of squid into 1cm rings, sort through 250g of mussels and 250g of cockles (or clams), giving any that aren’t tightly closed a tap. If they don’t close, discard them. Slice the 4 scallops.\r\nPeel and finely slice 1 clove of garlic, pick and finely chop 1 bunch of fresh flat-leaf parsley (30g), and finely grate the zest of ½ a lemon. Trim and finely chop 1 fresh red chilli (if using).\r\nPlace a large non-stick pan on a medium-high heat with 1 tablespoon of olive oil. Add the garlic, chilli and 1 tablespoon of baby capers, cook for 1 minute, then add the clams and mussels. Cook for a couple of minutes, then add the squid, scallops, lemon zest and parsley, and give it a good stir.\r\nScrunch in 1 x 400g tin of plum tomatoes through your clean hands, bring to the boil, then reduce the heat and simmer for 2 minutes to let the flavours mingle, stirring regularly and breaking up the tomatoes.\r\nStir in 1 handful of samphire (if using) and squeeze in the juice of ½ a lemon. Give the pan a jiggle and simmer for 1 minute more, or until perfectly cooked (discarding any shells that remain closed).\r\nRemove the pan from the heat and carefully pick the meat out of the shells, if you like.\r\nGrate in 20g of Parmesan, then taste and season to perfection, adding an extra squeeze of lemon juice, if needed.\r\nToss the pasta into the sauce, loosening with a splash of pasta water, if needed, then finish with a kiss of extra virgin olive oil.",
+    "ingredients": "300 g dried linguine\r\n250 g squid , gutted, cleaned, from sustainable sources\r\n250 g mussels , scrubbed, debearded, from sustainable sources\r\n250 g cockles or clams , scrubbed, from sustainable sources\r\n4 scallops with roe attached , from sustainable sources\r\n1 clove of garlic\r\n1 bunch of fresh flat-leaf parsley , (30g)\r\n1 lemon\r\n1 fresh red chilli , optional\r\nolive oil\r\n1 tablespoon baby capers\r\n1 handful of samphire , optional\r\n1 x 400 g tin of quality plum tomatoes\r\n20 g Parmesan cheese\r\nextra virgin olive oil",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663175520/Recipes/134449920_dpxoxl.jpg",
     "foodtype": [
       2,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 14,
+  "fields": {
+    "title": "Orzo pasta",
+    "instructions": "ON THE DAY Preheat the oven to 150°C/300°F/gas 2. In a large roasting tray, mix the harissa with 1 tablespoon each of red wine vinegar and olive oil and a pinch of sea salt and black pepper. Add the tomatoes on the vines, trim and add the whole spring onions, then break up the garlic, squash the unpeeled cloves and add to the tray. Gently toss together, roast for 1 hour, then remove.\r\n\r\nSqueeze the soft garlic flesh out of the skins on to a board, finely chop with the spring onions and most of the herb leaves, then scrape into a large pan. Pour the tomatoes and all the juices from the tray through a coarse sieve into the pan, pushing it all through with the back of a spoon. Keep aside.\r\n\r\nTO SERVE Heat up the sauce while you cook the broad beans in a large pan of boiling salted water for 2 minutes. Remove with a slotted spoon, pinching the skin off any larger beans, if you like, while you cook the orzo in the large pan of boiling salted water according to the packet instructions. Drain, pour into the sauce with the beans and turn the heat off, letting the orzo suck up all that flavour. Transfer to a large serving bowl, pick over the remaining herbs and finish with a drizzle of extra virgin olive oil. Serve hot or at room temperature.",
+    "ingredients": "1 teaspoon rose harissa\r\nred wine vinegar\r\nolive oil\r\n1 kg ripe cherry tomatoes , on the vine\r\n1 bunch of spring onions\r\n1 bunch of garlic\r\n1 bunch of soft herbs (30g) , such as basil, dill, mint\r\n500 g frozen broad beans , (or fresh, if it’s the season)\r\n500 g dried orzo pasta\r\nextra virgin olive oil",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663175645/Recipes/128036835_c08sap.jpg",
+    "foodtype": [
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 15,
+  "fields": {
+    "title": "Creamy prawn linguine",
+    "instructions": "Cook the pasta in a pan of boiling salted water according to the packet instructions. Meanwhile, peel and finely slice the garlic. Run your knife down the back of 2 prawns, so they'll butterfly as they cook, then finely chop the rest.\r\n\r\nPut a large non-stick frying pan on a medium heat. Finely slice the pancetta, sprinkle into the pan with 1 tablespoon of olive oil and fry until lightly golden. Toss in the garlic and whole prawns for 2 minutes, then go in with the wine and let it cook away. Toss through the chopped prawns and mascarpone for 1 minute, then use tongs to drag the pasta straight into the pan, letting a little starchy cooking water go with it. Roughly chop the rocket, add most of it to the pan and toss it all together over the heat until you have a silky sauce. Subtly season to perfection with the Parmesan and black pepper. Serve sprinkled with the remaining rocket and an extra grating of Parmesan, if you like.",
+    "ingredients": "150 g dried linguine\r\n2 cloves of garlic\r\n160 g raw peeled king prawns , from sustainable sources\r\n4 rashers of higher-welfare smoked pancetta\r\nolive oil\r\n50 ml Italian red wine\r\n1 heaped tablespoon mascarpone cheese\r\n50 g rocket\r\n10 g Parmesan cheese",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663175707/Recipes/119338870_xfyhcu.jpg",
+    "foodtype": [
+      2,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 16,
+  "fields": {
+    "title": "Quick green pasta",
+    "instructions": "Trim and slice the spring onions. Trim the leek, halve it lengthways, wash it, then finely slice. Finely slice the broccoli stalks, reserving the tips.\r\nPut a large, non-stick, shallow casserole pan on a medium heat.\r\nPut 1 tablespoon of olive oil into the pan, with the spring onions, leeks and broccoli stalks. Peel and finely chop the garlic and add to the pan.\r\nAdd the frozen spinach and peas, then add a pinch of sea salt and black pepper.\r\nCook for 10 to 15 minutes, or until soft but not coloured and the spinach has defrosted, stirring regularly.\r\nMeanwhile, cook the pasta in a large pan of boiling salted water, according to the packet instructions, adding the broccoli florets for the last 2 minutes.\r\nWhile everything is ticking away, finely grate the Parmesan.\r\nScoop or pour out about 200ml of cooking water from the pasta into your veg pan. Now, you can either leave your sauce chunky, blitz it until smooth in a blender, or use a hand blender to go somewhere in between – it’s up to you.\r\nDrain the pasta and broccoli, and tip it into the sauce. Add 1 tablespoon of extra virgin olive oil and the grated Parmesan, and toss it all together.\r\nI like to finish this with a sprinkling of fresh herbs – parsley, basil, thyme, whatever you’ve got. A little extra grating of Parmesan is always nice, and a big salad on the side.",
+    "ingredients": "6 spring onions\r\n1 leek\r\n1 large handful of Tenderstem broccoli spears\r\nolive oil\r\n2 cloves of garlic\r\n100 g frozen spinach\r\n2 large handfuls of frozen peas\r\n450 g dried pasta\r\n50 g Parmesan cheese , plus extra to serve\r\nextra virgin olive oil\r\noptional: fresh herbs , to serve",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663175790/Recipes/105564455_abpccm.jpg",
+    "foodtype": [
+      2,
+      5,
       6
     ]
   }
 },
 {
   "model": "recipes.recipe",
-  "pk": 2,
+  "pk": 17,
   "fields": {
-    "title": "gooey Chocolate brownies",
-    "instructions": "lots of chocolate, some cake mix, some chocolate chunks",
-    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663161208/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ_znlmvm.jpg",
+    "title": "Tortiglioni",
+    "instructions": "Pod the peas and place just the pods in a pan of boiling salted water for 5 minutes to impart their flavour. Finely dice the guanciale, place in a large cold non-stick frying pan and put on a medium heat to render the fat, tossing regularly. Meanwhile, scoop out and discard the pea pods, then cook the pasta in the boiling salted water according to the packet instructions. Peel and rustically chop the shallots, then add to the guanciale pan for 5 minutes, or until lightly golden. Add the peas and a good splash of water, then finely grate in the lemon zest. Cover and cook gently for 5 minutes, tossing occasionally, while you rip the top leafy half off the mint and finely chop it, and finely grate the pecorino.\r\n\r\nDrain the pasta, reserving a mugful of starchy cooking water. Pour the pasta into the frying pan, then remove from the heat and toss well so the pasta absorbs maximum flavour. Stir in the mint and pecorino, jiggling the pan to create creaminess. Loosen with a little cooking water, if needed, season to perfection, then serve with an extra grating of pecorino, a kiss of extra virgin olive oil, a squeeze of lemon, and a few pea shoots, if you like.",
+    "ingredients": "350 g fresh peas , in their pods\r\n80 g piece of higher-welfare guanciale (cured pig’s cheek) , or smoked pancetta\r\n150 g dried tortiglioni , or rigatoni\r\n2 shallots\r\n½ a lemon\r\n½ a bunch of fresh mint , (15g)\r\n30 g pecorino cheese , plus extra to serve\r\nextra virgin olive oil\r\npea shoots , to serve (optional)",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663175872/Recipes/77878569_jhmrek.jpg",
     "foodtype": [
+      2
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 18,
+  "fields": {
+    "title": "Chicken & mushroom puff pie",
+    "instructions": "Preheat the oven to 200°C/400°F/gas 6. Chop the chicken into 3cm chunks and place in a 30cm non-stick frying pan on a medium-high heat with 1 tablespoon of olive oil, stirring regularly. Trim the spring onions, chop into 1cm lengths and add to the pan. Trim and tear in the mushrooms. Cook for 10 minutes, or until golden, stirring regularly.\r\n\r\nMeanwhile, unroll the pastry sheet on its paper and score a 3cm border around the edge (don’t cut all the way through), then very lightly score a large criss-cross pattern across the inner section. Brush with a little milk, then place the pastry, still on its paper, directly on the middle shelf of the oven to cook for 17 minutes, or until golden, risen and cooked through. Stir the flour into the pan for 1 minute, then gradually stir in the milk. Simmer on a medium heat until the pastry is done, stirring occasionally, and loosening with extra splashes of milk, if needed. Turn the heat off, stir through the mustard and half of the leaves, then season to perfection. Remove the pastry from the oven, leave to cool slightly, then transfer to a serving board, discarding the paper. Use a sharp knife to cut round the border, cutting through the top few layers of pastry only. Use a fish slice to carefully lift up and remove the inner section (like a lid), leaving a layer of pastry at the bottom. Pile in the remaining leaves and filling, then put the lid back on, slice and serve.",
+    "ingredients": "500 g free-range skinless boneless chicken thighs\r\nolive oil\r\n1 bunch of spring onions\r\n320 g mixed mushrooms\r\n320 g sheet of ready-rolled puff pastry\r\n600 ml semi-skimmed milk\r\n1 heaped tablespoon plain flour\r\n1 tablespoon wholegrain mustard\r\n80g mixed bag of watercress, spinach & rocket",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663176192/Recipes/136440026_amjm5f.jpg",
+    "foodtype": [
+      8,
+      9,
       6
     ]
   }
 },
 {
   "model": "recipes.recipe",
-  "pk": 3,
+  "pk": 19,
   "fields": {
-    "title": "pepperoni Pizza",
-    "instructions": "pizza base, tomato sauce, slices of pepperoni",
-    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663161208/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ_znlmvm.jpg",
+    "title": "My veggie black bean enchiladas",
+    "instructions": "Preheat the oven to 180ºC/350ºF/gas 4.\r\nHalve, deseed and remove the stalks from 2 red peppers and 2 fresh red chillies.\r\nBlacken and char 6 spring onions, 400g of tomatoes, the peppers, chillies, and 2 cloves of garlic in a large dry ovenproof non-stick pan (or directly over the flame of a gas hob) on a high heat – you may need to work in batches.\r\nPeel away any really blackened bits of vegetable skin, removing any tough skins or stalks, as necessary, and place in a blender with 1 tablespoon of olive oil and the stalks from 1 bunch of fresh coriander (30g), reserving the leaves.\r\nAdd a good splash of water, then finely grate in the zest of 2 limes and squeeze in the juice of 1½, then blitz until smooth. Season to taste.\r\nTo make the filling, drain 2 x 400g tins of black beans and place in a bowl, season with sea salt and black pepper, then add a few shakes of chipotle chilli sauce, to taste.\r\nCrumble in 25g of feta cheese and add 1 splash of olive oil, then roughly mash half the beans and stir back through so you get a mixture of textures. Tear in half the reserved coriander leaves and stir through.\r\nPour half the sauce into your pan and place over a medium-low heat.\r\nDivide the filling between 8 tortillas, then roll up into thin cigars, placing into the pan as you go.\r\nPour over the remaining sauce and crumble over the remaining 25g of feta, then bake for 25 to 30 minutes, or until golden and bubbling.\r\nTo make a quick sweetcorn salsa, char 2 large or 4 small corn on the cob directly over the flame of a gas hob (or in a dry pan) on a medium heat for a few minutes, turning regularly, then slice off the corn kernels and place into a bowl.\r\nDrizzle over 1 tablespoon of extra virgin olive oil and squeeze over the juice from the remaining ½ a lime.\r\nChop 2 spring onions and most of the remaining coriander leaves, stir through the salsa, then season to taste with salt, pepper and chipotle chilli sauce.\r\nServe straight from the oven",
+    "ingredients": "2 red peppers\r\n2 fresh red chillies\r\n8 spring onions\r\n400 g ripe tomatoes\r\n2 cloves of garlic\r\nolive oil\r\n1 bunch of fresh coriander , (30g)\r\n2 limes\r\n2 x 400 g tins of black beans\r\nchipotle chilli sauce\r\n50 g feta cheese\r\n8 corn or flour tortillas\r\n2 large or 4 small corn on the cob\r\nextra virgin olive oil\r\nnatural yoghurt or soured cream , to serve",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663176264/Recipes/134397244_avfvn3.jpg",
     "foodtype": [
-      1,
+      5,
       6
     ]
   }
 },
 {
   "model": "recipes.recipe",
-  "pk": 4,
+  "pk": 20,
   "fields": {
-    "title": "spicy curry",
-    "instructions": "add ingredients and heat up",
-    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663161208/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ_znlmvm.jpg",
+    "title": "Lamb & chickpea hand pies",
+    "instructions": "Heat 2 tablespoons of oil in a large pan. Peel and finely chop the onion and cook over a medium heat until soft but not coloured. Peel, crush and add the garlic and cook for 1 more minute.\r\nAdd all of the spices and dried herbs to the pan, then cook for another 30 seconds until aromatic.\r\nAdd the lamb mince and cook over a high heat until browned all over. Add the tomato purée, cook for 1 minute, then tip in the tinned tomatoes, stock and sugar, breaking up the tomatoes with a wooden spoon.\r\nSeason with sea salt and black pepper, stir to combine and cook over a medium-low heat for about 30 minutes, or until the lamb is tender, the sauce has thickened and almost all of the liquid has evaporated.\r\nRemove the pan from the heat. Pick and finely chop the mint leaves, then add along with the chickpeas and pine nuts, then season to taste and leave to cool.\r\nTo make the pastry, sift both flours into a bowl, then add the turmeric and 3 teaspoons of salt. Dice the butter and rub into the flour until it resembles breadcrumbs.\r\nCombine the vinegar with 180ml of iced water and make a well in the middle of the flour mixture. Add three-quarters of the vinegar water and mix with a knife until the dough starts to come together, adding the rest of the liquid, if needed.\r\nVery lightly knead the dough until smooth, flatten into a disc, wrap in clingfilm and chill for at least 20 minutes.\r\nDivide the pastry into 15 even pieces and roll out each one on a lightly floured work surface to a thickness of about 3mm. Cut the pastry into 12 to 13cm discs using a saucer or small bowl as a guide.\r\nLay the pastry discs on a work surface and add a heaped tablespoon of the lamb mixture to each pasty. Brush the edges with water and fold the pastry over to make neat semi-circles. Pinch the edges together and crimp between your fingers.\r\nArrange the pies on a baking tray. Beat the egg with the milk, then brush over the top and chill in the fridge for 20 minutes.\r\nPreheat the oven to 180ºC/350ºF/gas 4. Brush the pasties with more egg wash, sprinkle with the za’tar and bake on the middle shelf of the oven for 20 to 25 minutes, or until the pastry is cooked and the filling is hot through.",
+    "ingredients": "olive oil\r\n1 onion\r\n2 cloves of garlic\r\n¼ teaspoon ground cinnamon\r\n½ teaspoon cumin seeds\r\n½ teaspoon cayenne pepper\r\n1 pinch of ground allspice\r\n½ teaspoon dried mint\r\n½ teaaspoon dried oregano\r\n400 g lamb mince\r\n1 heaped tablespoon tomato purée\r\n1 x 400 g tin of quality plum tomatoes\r\n100 ml organic beef stock\r\n1 pinch of caster sugar\r\n4 sprigs of fresh mint\r\n½ x 400 g tin of chickpeas\r\n50 g toasted pine nuts\r\n225 g plain flour , plus extra for dusting\r\n225 g chickpea (gram) flour\r\n1 teaspoon ground turmeric\r\n250 g unsalted butter\r\n2 teaspoons cider or white wine vinegar\r\n1 large free-range egg\r\n1 tablespoon milk\r\n2 teaspoons za'tar",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663176440/Recipes/50242466_gsohm5.jpg",
     "foodtype": [
+      8,
       6
     ]
   }
 },
 {
   "model": "recipes.recipe",
-  "pk": 5,
+  "pk": 21,
   "fields": {
-    "title": "spicy curry 2",
-    "instructions": "add ingredients and heat up",
-    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663161208/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ_znlmvm.jpg",
+    "title": "Spinach & feta filo pie",
+    "instructions": "Preheat the oven to 200°C/400°F/gas 6.\r\nToast the pine nuts in a large ovenproof frying pan over a medium heat for 1 to 2 minutes, or until golden and smelling fantastic, tossing occasionally.\r\nCrack the eggs into a large mixing bowl, crumble in the feta, then grate in the Cheddar. Season with a pinch of black pepper and a couple of pinches of dried oregano.\r\nFinely grate in the lemon zest, drizzle in a little oil, then toss in the toasted pine nuts. Mix well.\r\nMelt the butter in the frying pan over a medium heat with a drizzle of oil, add half the spinach, stirring until wilted, then when there’s space, add the remaining spinach, stirring regularly until wilted.\r\nLay a 50cm strip of greaseproof paper out on a clean work surface, rub lightly with oil and scrunch up, then flatten out again.\r\nArrange 4 sheets of filo in a large rectangle on the greaseproof paper, overlapping at the edges, so that it’s almost covering the greaseproof.\r\nRub the filo with a little oil, sprinkle with sea salt, pepper and a pinch of cayenne pepper. Repeat until you have 3 layers.\r\nStir the wilted spinach into the egg mixture, then grate in half the nutmeg and mix well.\r\nSlide the greaseproof and filo into the empty frying pan, so that the edges spill over, then push down into the sides of the pan.\r\nPour in the spinach mixture and spread out evenly, then fold the filo up over the filling to cover.\r\nPlace the pan over a medium heat for 2 minutes, just to get the bottom cooking, then transfer to the top shelf of the oven for 18 to 20 minutes, or until golden and crisp. Delicious served with a fresh seasonal salad.",
+    "ingredients": "100 g pine nuts\r\n5 large free-range eggs\r\n300 g feta cheese\r\n50 g Cheddar cheese\r\ndried oregano\r\n1 lemon\r\nolive oil\r\n1 knob of unsalted butter\r\n400 g baby spinach\r\n1 x 270 g pack of filo pastry\r\ncayenne pepper\r\n1 whole nutmeg , for grating",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663176595/Recipes/76718257_kfn8hr.jpg",
     "foodtype": [
-      1
+      8,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 22,
+  "fields": {
+    "title": "Luxurious fish pie",
+    "instructions": "Buy your lobster on the day you want to cook it. Ask your fishmonger to kill it for you, or if you’re happy doing it yourself, place the live lobster in the freezer for 30 minutes, so it’s docile.\r\nWhen ready to cook, carefully and swiftly place the lobster in a large pan of boiling water head first, pop the lid on and cook for 8 minutes.\r\nRemove, cool, and carefully halve the lobster, then remove the meat to a bowl – save the claws to decorate, if you like, or, even better, crack, pull out the meat and add it to the bowl.\r\nPut all the shells back into the empty pan you cooked the lobster in and bash with a rolling pin, then pour in the milk and simmer on a low heat for 15 to 20 minutes to impart unbelievable flavour.\r\nMeanwhile, peel the onion and carrot, trim the fennel, wash the leek, finely chop it all and place in a large casserole pan on a medium heat with 1 tablespoon of oil and half the butter. Cook for 15 minutes, or until soft and sticky, stirring regularly.\r\nStir in the flour, followed by the mustard and Prosecco. Let the alcohol bubble and cook away, then strain and gradually stir in the milk and simmer until you have a nice, loose, silky consistency.\r\nRemove from the heat, grate in the Lancashire cheese, taste, season to perfection with sea salt and black pepper and leave to cool.\r\nPeel the potatoes, cutting up any larger ones so they’re all a similar size, then cook in a large pan of boiling salted water for 15 to 20 minutes, or until cooked through.\r\nDrain in a colander and leave to steam dry, then return to the pan and mash well with the remaining butter and the grated Red Leicester. Season to perfection with sea salt and cayenne, loosening with a splash of milk, if needed.\r\nPreheat the oven to 180°C/350°F/gas 4.\r\nRemove any tough stalks from the greens, then finely chop and sprinkle into a baking dish (30cm x 35cm).\r\nSlice all the fish into bite-sized pieces and add to the dish, halve and add the prawns (deveining, if needed), then dot the lobster meat in and around. Pour over the sauce, top with the mash, then drizzle lightly with oil and poke in your lobster claws (if using).\r\nBake for 1 hour, or until golden, bubbling and the fish is cooked through.",
+    "ingredients": "1 x 1.5 kg whole live lobster , from sustainable sources\r\n600 ml semi-skimmed milk\r\n1 onion\r\n1 large carrot\r\n1 bulb of fennel\r\n1 leek\r\nolive oil\r\n50 g unsalted butter\r\n2 tablespoons plain flour\r\n2 teaspoons English mustard\r\n150 ml Prosecco\r\n50 g Lancashire or Cheddar cheese\r\n75 g Red Leicester cheese\r\n2 kg Maris Piper potatoes\r\ncayenne pepper\r\n200 g seasonal greens , such as kale, cavolo nero, chard\r\n1 kg mixed fish fillets and seafood , such as smoked haddock, scallops, salmon, bass, gurnard, lemon sole, skin off, pin-boned, from sustainable sources\r\n10 raw peeled king prawns , from sustainable sources",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663181602/Recipes/Ak07TaO0aXr9kkdlQMFgSF_ckzjct.jpg",
+    "foodtype": [
+      8,
+      7
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 23,
+  "fields": {
+    "title": "Baklava Pie",
+    "instructions": "Preheat the oven to 170ºC/gas 3-4. Grease an 18cm x 30cm baking tray.\r\nMelt the butter and set aside.\r\nChop the nuts, then mix in a bowl with the brown sugar, cinnamon and 50g of the granulated sugar.\r\nWhisk the eggs, then stir into the nut mixture with 100g of the melted butter and leave to one side.\r\nReheat the remaining butter, so it’s loose enough to brush over the pastry. Remove the filo from the packaging and, working quickly, line the dish with a layer of filo, so it hangs over the edge, then brush with butter.\r\nRepeat, layering up the pastry and butter until you’ve used all of the filo, making sure there is plenty of overhang with each sheet.\r\nMix the nut filling one last time, then pour it into the case.\r\nFold in the overhanging pastry to create a ruffled top – it won’t cover the whole pie, but you want to show a little of the filling.\r\nBake in the oven for 45 minutes, or until crispy.\r\nWhile the pie is cooking, place the remaining sugar in a pan with the honey, lemon juice and 100ml of water. Bring to the boil, then simmer for 5 to 10 minutes, or until you have a light syrup.\r\nTake it off the heat, stir in the orange blossom water, and cool.\r\nRemove the pie from the oven and drizzle over the honey syrup. Leave it to cool completely.\r\nChop the remaining pistachios and sprinkle over. Serve with a good dollop of thick Greek yoghurt on the side, if you like.",
+    "ingredients": "125 g butter , plus extra for greasing\r\n200 g walnuts\r\n200 g pistachios , plus extra to serve\r\n75 g light brown sugar\r\n1 heaped teaspoon ground cinnamon\r\n150 g granulated sugar\r\n2 large free-range eggs\r\n270 g filo pastry\r\n75 ml runny honey\r\n1 lemon\r\n2 tablespoons orange blossom water",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663181833/Recipes/46263204_qxkeuj.jpg",
+    "foodtype": [
+      8,
+      5
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 24,
+  "fields": {
+    "title": "Veggie feijoada with sweet potato & kidney beans",
+    "instructions": "Place the rice into a medium pan, cover with cold water, then place over a medium heat. Bring to the boil, then simmer gently for 12 to 15 minutes, or until just cooked.\r\nDrain in a sieve, then place the sieve over the warm pan. Season with a little sea salt and black pepper, cover with a lid and set aside off the heat.\r\nMeanwhile, fill a small pan with water, place over a medium heat and bring to the boil. Peel and chop the sweet potato into chunks, then add to the pan when the water is boiling. Cook with the lid on for 5 minutes, or until tender. Drain and set aside.\r\nPeel the onions and cut into wedges. Separate each wedge into petals, then peel and finely slice the garlic.\r\nHalve, deseed and roughly dice the pepper, then trim and halve the courgette, roughly slicing it at an angle.\r\nDrizzle 1 tablespoon of olive oil into a large pan over a medium-high heat, add the sweet potato, onions, peppers and courgette, cooking for 8 minutes, or until softened but charred and gnarly on the outside.\r\nDrain the beans, but reserve the juice. Add the beans to the hot pan (save the rest for another day) and cook for 1 more minute.\r\nStir through, then add the garlic, ground coriander, and paprika. Season well with salt and pepper and cook for 3 minutes, or until sticky and gnarly.\r\nFinely slice the coriander (stalks and all). Roughly chop the tomatoes. Add to the pan with their juices, along with the coriander stalks, the reserved liquid from the beans and 275ml of water.\r\nBring to the boil, then simmer for 5 to 10 minutes, or until the veg is soft and the sauce has thickened. Add an extra splash of water to loosen if the sauce gets too thick.\r\nSeason the veggie feijoada to taste and stir through most of the coriander leaves. Serve with the rice, a dollop of yogurt and the reserved coriander scattered on top.",
+    "ingredients": "160 g brown rice\r\n200 g sweet potato\r\n2 red onions\r\n2 cloves of garlic\r\n1 red pepper\r\n½ a courgette\r\nolive oil\r\n½ x 200 g tin of kidney beans\r\n1 teaspoon ground coriander\r\n1 teaspoon smoked paprika\r\n½ a bunch of fresh coriander , (15g)\r\n4 ripe tomatoes\r\n50 g fat-free natural yoghurt",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663181947/Recipes/0x0zIFPCqlsBq04WOaAyic_odwkry.jpg",
+    "foodtype": [
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 25,
+  "fields": {
+    "title": "Scrumptious garlic bread",
+    "instructions": "This recipe works great as a stand-alone dish, but also as a component in Jamie’s Christmas Party from Together – see the full collection of menus here.\r\n\r\nGET AHEAD You can do this on the day, if you prefer. Pour 325ml of tepid water into a large bowl. Add the yeast and mix with a fork for 2 minutes. Pour in the flour and a good pinch of sea salt, then use a fork to mix until you can’t move it any more. Now, get your clean hands in there and bring it together as a ball of dough, adding more flour, if needed, to stop your hands and the dough sticking. Knead on a flour-dusted surface for 5 minutes, or until silky and elastic. Shape into a rough ball, place in a lightly oiled bowl, cover with a clean, damp tea towel, and prove in a warm place for 1 hour, or until doubled in size.\r\n\r\nMeanwhile, tear the bread into a blender and blitz into crumbs. Rub two 20cm x 30cm trays with olive oil, then evenly scatter over the breadcrumbs. Tear the top leafy half of the parsley into the blender. Peel and add the garlic, then blitz until fine. Squeeze in the lemon juice, add the cream cheese, blitz again until smooth, then season to perfection, tasting and tweaking.\r\n\r\nKnock the air out of the dough by punching it with your fist, then divide into two. One piece at a time, pull and stretch out on an oiled surface to 30cm x 50cm. Spread over half the cream cheese mixture, leaving a 5cm border along the longer side that’s farthest away from you. Now, take your time to roll up the dough, starting in front of you, so you end up with a long Swiss roll shape. With a sharp knife, cut the roll into 18 pieces, then place in the tray, swirl-side up, arranging them fairly close together. Cover and prove in the fridge overnight (45 minutes, or until doubled in size, if making on the day).\r\n\r\nTO SERVE Preheat the oven to 220°C/425°F/gas 7. Uncover and bake on the top shelf for 20 minutes, or until golden. Drizzle with a little extra virgin olive oil, to serve.",
+    "ingredients": "1 x 7g sachet of dried yeast\r\n500 g strong bread flour , plus extra for dusting\r\nolive oil\r\n50 g white or wholemeal bread\r\n1 big bunch of flat-leaf parsley , (60g)\r\n3 cloves of garlic\r\n1 lemon\r\n200 g light cream cheese\r\nextra virgin olive oil",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663182076/Recipes/128286819_mg4fmu.jpg",
+    "foodtype": [
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 26,
+  "fields": {
+    "title": "NishkamSWAT veggie lasagne",
+    "instructions": "Preheat the oven to 200°C/400°F/gas 6.\r\nPeel two of the garlic cloves and one of the red onions, and deseed one of the peppers. Roughly chop it all and scrape into a large pan on a medium heat with 1 tablespoon of olive oil. Cook for 15 minutes, or until softened, stirring regularly.\r\nTip in the tinned tomatoes along with 1 tin’s worth of water, then simmer for 15 minutes, or until thickened. Blitz to a smooth sauce, then season to perfection with sea salt, black pepper and a splash of balsamic vinegar.\r\nPeel and finely chop the remaining onions and garlic. Deseed the peppers and chop into 2cm pieces along with the courgettes and aubergines.\r\nPlace a large pan on a medium heat with 2 tablespoons of oil and add all the vegetables. Pick, finely chop and add the thyme leaves, then cook for 30 minutes, or until softened and caramelised, stirring occasionally – you may need to work in batches.\r\nHalve the cherry tomatoes and drain the beans, then add to the pan with the tomato sauce. Simmer for a further 10 minutes, then season to perfection.\r\nTo make the Béchamel, melt the butter in a large heavy-based pan over a medium-low heat, then stir in the flour until you have a smooth paste. Gradually add splashes of milk, stirring all the time, until you have a smooth white sauce. Bring to the boil, then simmer for 5 minutes, or until thickened. Turn off the heat, grate in most of the Cheddar and a good few scrapings of nutmeg, then season to perfection.\r\nTo assemble, generously oil a 30cm x 40cm baking dish and line the base with a layer of lasagne sheets. Spoon over half of the vegetable sauce, followed by a third of the Béchamel. Repeat with another layer of lasagne sheets, sauce and Béchamel, then finish with a final layer of lasagne sheets topped with Béchamel.\r\nGrate over the remaining cheese, then bake in the oven for 40 minutes, or until golden and bubbling. Leave to stand for 10 minutes before serving.",
+    "ingredients": "4 cloves of garlic\r\n3 red onions\r\n5 mixed-colour peppers\r\nolive oil\r\n2 x 400 g tins of quality plum tomatoes\r\nbalsamic vinegar\r\n2 courgettes\r\n2 aubergines\r\n½ a bunch of fresh thyme , (15g)\r\n250 g cherry tomatoes\r\n2 x 400 g tins of mixed beans\r\n1 bunch of fresh basil , (30g)\r\n700 g dried lasagne sheets\r\nBÉCHAMEL\r\n75 g unsalted butter\r\n6 heaped tablespoons plain flour\r\n1.5 litres semi-skimmed milk\r\n250 g Cheddar cheese\r\n1 whole nutmeg , for grating",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663182169/Recipes/117650276_kkcz3k.jpg",
+    "foodtype": [
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 27,
+  "fields": {
+    "title": "Upside down fish pie",
+    "instructions": "Preheat the oven to 200°C/400°F/gas 6. Boil the kettle. Scrub the potatoes, chop into 3cm chunks, place in a large shallow casserole pan and cover with boiling kettle water. Bring back to the boil and cook for 15 minutes, or until tender, trimming and adding the broccoli for the last 4 minutes. Drain, put the broccoli aside, return the spuds to the pan and mash well with the tartare sauce and ½ a tablespoon of olive oil, then season to perfection. Put back on a medium heat and use the back of a spoon to spread the mash across the base and sides of the pan. Drizzle with oil, then transfer to the oven to bake for 20 minutes, or until golden.\r\n\r\nMeanwhile, slice the salmon lengthways just under 1cm thick. Halve the cherry tomatoes. Finely chop the chives. Toss it all with the prawns, lemon juice and a pinch of sea salt and black pepper. When the mash is golden, arrange the blanched broccoli on top, then lay over the dressed salmon, prawns and tomatoes. Return to the oven for 10 minutes, or until the fish and prawns are cooked through.",
+    "ingredients": "1 kg potatoes\r\n320 g sprouting broccoli\r\n100 g tartare sauce\r\nolive oil\r\n400 g piece of salmon , skin off, pin-boned\r\n320 g ripe mixed-colour cherry tomatoes\r\n1 bunch of chives (20g)\r\n165 g raw peeled king prawns\r\n½ a lemon",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663182276/Recipes/136867685_mepehp.jpg",
+    "foodtype": [
+      8,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 28,
+  "fields": {
+    "title": "Malaysian-style whole fish",
+    "instructions": "Preheat the oven to 220°C/425°F/gas 7.\r\nWhack the lemongrass against your work surface and remove the tough outer layer. Peel the shallot and ginger, deseed the chillies, then roughly chop everything with the lemongrass. Add to a large pestle and mortar with a good pinch of sea salt and the lime leaves (discard the stalks) and pound to a paste.\r\nToast the peanuts in a large frying pan over a medium heat for 3 minutes, or until golden, then bash half into the paste. Add the tomato purée and fish sauce, finely grate in the lime zest and squeeze in all the juice, then muddle together.\r\nWith a sharp knife, score the sea bass skin at 1cm intervals in a criss-cross fashion, then rub all over with the paste, both inside and out.\r\nGet your banana leaf (if using), or tear off a piece of baking paper five times as long as the fish and fold it in half to give you double thickness. Place the fish in the middle, then fold over to seal the fish snuggly inside. Place on a large baking tray and roast for 25 minutes, or until the flesh is succulent and comes away easily from the bone.\r\nTo make the rice, drizzle the vegetable oil into a saucepan over a medium heat. Crumble in the creamed coconut, then squeeze in the lime juice, throwing in the squeezed lime halves. Tip in the rice and fry for 2 minutes, then pour over 1 mug of boiling water and turn down the heat to low. Cover and cook for 12 minutes, then remove from the heat and allow to steam for a further 3 minutes.\r\nFor the chilli pickle, finely slice the chillies and place in a small bowl with the sugar, vinegar and a pinch of salt, then mix together and leave aside.\r\nNow make the salad. Crack open the coconut and finely grate 50g of flesh into a serving bowl. Halve the sugar snaps and mangetout, finely shred both cabbages and cucumber, then peel and finely slice the mango and add it all to the bowl. Pick in most of the herb leaves, squeeze over the lime juice and toss together.\r\nPop the fish on a serving platter. Roughly crush the remaining peanuts in a pestle and mortar, then scatter over the salad and the fish. Drizzle the fish with the soy sauce and scatter over the remaining salad herbs.\r\nTake the fish, chilli pickle, rice and salad to the table and let everyone help themselves.",
+    "ingredients": "1 stick of lemongrass\r\n1 shallot\r\n5 cm piece of ginger\r\n3 fresh red chillies\r\n6 lime leaves , (fresh or dried)\r\n100 g unsalted peanuts\r\n1 tablespoon tomato purée\r\n2 tablespoons fish sauce\r\n1 lime\r\n1 x 800 g whole sea bass , scaled, gutted, from sustainable sources\r\n1 large banana leaf , optional\r\n1 tablespoon low-salt soy sauce\r\nPICKLE\r\n3 mixed-colour chillies\r\n1 pinch of sugar\r\n2 tablespoons white wine vinegar\r\nSALAD\r\n1 fresh coconut\r\n75 g sugar snap peas\r\n75 g mangetout\r\n¼ of a Chinese cabbage\r\n¼ of a red cabbage\r\n¼ of a cucumber\r\n1 ripe mango\r\n½ a bunch of fresh mint , (15g)\r\n½ a bunch of fresh coriander , (15g)\r\n½ a bunch of fresh basil , (15g)\r\n1 lime\r\nCOCONUT RICE\r\n2 tablespoons vegetable oil\r\n1 tablespoon creamed coconut\r\n1 lime\r\n1 mug of jasmine rice",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663182362/Recipes/117867077_j8cave.jpg",
+    "foodtype": [
+      7
+    ]
+  }
+},
+{
+  "model": "recipes.recipe",
+  "pk": 29,
+  "fields": {
+    "title": "Roasted chicken breast with creamy butternut squash and chilli",
+    "instructions": "Preheat the oven to 200°C/400°F/gas 6. Put 1 chicken breast, with its skin left on, in a bowl. Deseed and slice up half a fresh red chilli and add to the bowl with the leaves from a couple of sprigs of fresh marjoram or oregano and a pinch of sea salt and freshly ground black pepper. Toss together. Very carefully cut a medium butternut squash into quarters. Remove the seeds and slice one quarter of the squash as finely as you can. Place the chicken breast and flavourings from the bowl into the tray and snugly fit your squash slices around the chicken. Carefully pour a little single cream around the squash (not on the chicken). Season with grated nutmeg and salt and pepper then drizzle with some olive oil and cook in the middle of the oven for 25 to 35 minutes.",
+    "ingredients": "1 higher-welfare chicken breast\r\n½ fresh red chilli\r\n2 sprigs fresh marjoram or oregano\r\n1 pinch sea salt\r\n1 pinch freshly ground black pepper\r\n1 medium butternut squash\r\na little single cream\r\ngrated nutmeg\r\nsalt\r\npepper\r\nolive oil",
+    "image": "https://res.cloudinary.com/aaf-proj3/image/upload/v1663182585/Recipes/464_36_1436883015_xb56bb.jpg",
+    "foodtype": [
+      9
     ]
   }
 }

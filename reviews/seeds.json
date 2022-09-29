@@ -1,49 +1,169 @@
 [
 {
   "model": "reviews.review",
-  "pk": 2,
+  "pk": 6,
   "fields": {
-    "title": "this was yum",
-    "text": "made last night and love",
-    "created_at": "2022-09-09T16:17:25.911Z",
-    "rating": 1,
-    "recipe": 1,
+    "title": "wow! just amazing",
+    "text": "cook this now",
+    "created_at": "2022-09-14T19:56:54.803Z",
+    "rating": 3,
+    "recipe": 7,
     "owner": 1
   }
 },
 {
   "model": "reviews.review",
-  "pk": 3,
+  "pk": 8,
   "fields": {
-    "title": "could make again",
-    "text": "quick, easy, and delicious",
-    "created_at": "2022-09-12T18:37:10.757Z",
-    "rating": 1,
-    "recipe": 4,
+    "title": "Yum Yum Yum",
+    "text": "Loved this recipe! Very tasty, very easy to follow, budget-friendly. All round a success",
+    "created_at": "2022-09-14T19:59:34.070Z",
+    "rating": 5,
+    "recipe": 11,
     "owner": 1
   }
 },
 {
   "model": "reviews.review",
-  "pk": 4,
+  "pk": 10,
   "fields": {
-    "title": "horrible! dont try",
-    "text": "not worth your time",
-    "created_at": "2022-09-12T18:37:53.799Z",
+    "title": "testing",
+    "text": "testing text",
+    "created_at": "2022-09-15T17:25:04.568Z",
     "rating": 1,
-    "recipe": 4,
+    "recipe": 6,
     "owner": 1
   }
 },
 {
   "model": "reviews.review",
-  "pk": 5,
+  "pk": 11,
   "fields": {
-    "title": "i will delete this",
-    "text": "this is going to be deleted",
-    "created_at": "2022-09-12T19:07:51.392Z",
+    "title": "testing",
+    "text": "testing text",
+    "created_at": "2022-09-15T18:19:17.064Z",
     "rating": 1,
-    "recipe": 2,
+    "recipe": 6,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 12,
+  "fields": {
+    "title": "testing",
+    "text": "testing text",
+    "created_at": "2022-09-15T18:19:42.515Z",
+    "rating": 1,
+    "recipe": 6,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 13,
+  "fields": {
+    "title": "testing",
+    "text": "testing text",
+    "created_at": "2022-09-15T18:20:48.730Z",
+    "rating": 1,
+    "recipe": 6,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 15,
+  "fields": {
+    "title": "update",
+    "text": "please",
+    "created_at": "2022-09-15T19:40:21.346Z",
+    "rating": 3,
+    "recipe": 14,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 16,
+  "fields": {
+    "title": "Five stars! couldnt recommend enough!!",
+    "text": "have loved making this!",
+    "created_at": "2022-09-15T21:38:36.856Z",
+    "rating": 5,
+    "recipe": 7,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 17,
+  "fields": {
+    "title": "Not as good as it looked",
+    "text": "would make again, but not often",
+    "created_at": "2022-09-15T21:41:41.909Z",
+    "rating": 3,
+    "recipe": 7,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 18,
+  "fields": {
+    "title": "yum yum yum",
+    "text": "get this in your belly",
+    "created_at": "2022-09-15T23:24:25.611Z",
+    "rating": 4,
+    "recipe": 9,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 19,
+  "fields": {
+    "title": "is a must in a recipe book",
+    "text": "cook this nowww",
+    "created_at": "2022-09-15T23:25:26.861Z",
+    "rating": 5,
+    "recipe": 9,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 20,
+  "fields": {
+    "title": "Do not try",
+    "text": "big waste of your time",
+    "created_at": "2022-09-15T23:26:04.639Z",
+    "rating": 1,
+    "recipe": 11,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 21,
+  "fields": {
+    "title": "i loved this so much",
+    "text": "you should 100% try",
+    "created_at": "2022-09-15T23:26:29.916Z",
+    "rating": 3,
+    "recipe": 8,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 24,
+  "fields": {
+    "title": "10/10 big time comfort food",
+    "text": "would recommend to anyone",
+    "created_at": "2022-09-16T12:41:52.032Z",
+    "rating": 5,
+    "recipe": 14,
     "owner": 1
   }
 }

@@ -92,7 +92,7 @@ DATABASES = {
           'ENGINE': 'django.db.backends.postgresql_psycopg2',
           'NAME': 'recipe-api',
           'HOST': 'localhost',
-          'PORT': 5432
+          'PORT': 5432,
   }
 }
 REST_FRAMEWORK = {
