@@ -35,7 +35,7 @@ const AllRecipes = () => {
       <Row className='card-row'>
         {allRecipes.map( recipe => {
           const { id, title, image } = recipe
-          console.log(id, title)
+          // console.log(id, title)
           return (
             <Col key={id} md='4' className="col-allRecipes" mb='5'>
               { title ? 
