@@ -28,7 +28,7 @@ const SingleRecipe = () => {
       try {
         const { data } = await axios.get(`/api/recipes/${id}/`)
         setRecipe(data)
-        console.log(data)
+        // console.log(data)
       } catch (error) {
         console.log(error)
       }
