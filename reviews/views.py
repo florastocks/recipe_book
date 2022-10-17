@@ -56,3 +56,4 @@ class ReviewDetailView(APIView):
     except Exception as e:
       print(e)
       return Response(str(e), status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
